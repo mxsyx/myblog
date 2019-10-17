@@ -1,0 +1,28 @@
+[nginx]
+	配置文件 /etc/nginx/sites-available/default
+	进程文件 /var/run/nginx.pid
+	日志文件 /opt/log/access.log /opt/log/error.log
+
+[uwsgi]
+	配置文件 /etc/uwsgi.ini
+	进程文件 /var/run/uwsgi.pid
+	日志文件 /opt/log/uwsgi.log
+
+[mysql]
+	配置文件
+		/etc/mysql/my.cnf
+	进程文件 
+		/opt/mysqldts/mysqld.pid
+		/opt/mysqldtd/mysqld.pid
+	套接字文件
+		/opt/mysqldtd/mysqld.sock
+		/opt/mysqldtd/mysqld.sock
+	数据文件 
+		/opt/mysqldts/data/
+		/opt/mysqldtd/data/
+	二进制日志文件 /
+		opt/mysqldts/master-bin.*
+		/opt/mysqldtd/slave-bin.*
+	二进制日志索引文件 
+		/opt/mysqldts/master-bin.index
+		/opt/mysqldts/slave-bin.index
