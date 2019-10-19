@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
+import './assets/wolfberry.css'
 
 new Vue({
   render: h => h(App)

@@ -1,16 +1,15 @@
 <!-- 页面头部 -->
 
 <template>
-  <div id="my-header">
-    <div>
-      <a href="/"><h1>白居易</h1></a>
-      <small>浮云轻入鹤撩雾，青山深处自在仙</small>
+  <div id="my-header" class="row">
+    <div id="logo" class="col-sm-12 col-md-6 col-lg-4">
+      <a href="/">自在仙</a>
+      <span>浮云轻入鹤撩雾，青山深处自在仙</span>
     </div>
-    <div id="search-box">
+    <div id="search-box" class="hidden-sm col-md-6 col-lg-8">
       <input type="text" placeholder="请输入您要搜索的内容..." name="search-content">
       <button type="submit">搜索</button>
     </div>
-
   </div>
 </template>
 
@@ -21,62 +20,62 @@ export default {
 
 <style scoped>
 #my-header {
-  width: 100%;
-  height: 70px;
-  box-shadow: 0 0 6px rgba(0,0,0,0.25);
+  height: var(--header-height);
+  background-color: #34495E;
 }
 
-#my-header img {
-  width: 40px;
-  height: 40px;
+#logo a {
+  color: white;
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: var(--header-height);
+  margin: 0rem 1.6rem 0rem 2.4rem;
 }
 
-#my-header h1 {
-  display: inline-block;
-  margin: 0px 15px;
-  color: #048ABF;
-  line-height: 70px;
-}
-
-#my-header small {
+#logo span {
   color: #AAAAAA;
   user-select: none;
+  font-size: 1.4rem;
+  font-weight: 800;
 }
 
 #search-box {
-  width: 450px;
-  height: 40px;
-  position: absolute;
-  display: inline-block;
-  top: 15px;
-  right: 75px;
-}
-@media screen and (max-width: 900px) {
-  #search-box {
-    display: none;
-  }
+  position: relative;
 }
 
 #search-box input {
-  width: 100%;
-  height: 100%;
-  padding-left: 10px;
-  border: 2px solid #F25116;
+  width: 50%;
+  height: var(--search-box-height);
+  outline: none;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  float: right;
+  margin-right: 5%;
+  margin-top: calc((var(--header-height) - var(--search-box-height)) / 2);
+  border: 2px solid var(--main-color);
   border-radius: 5px;
   box-sizing: border-box;
 }
 
 #search-box button {
-  color: white;
-  width: 70px;
-  height: 40px;
-  top: 0px;
-  right: 0px;
+  width: 8%;
+  height: var(--search-box-height);
+  top: calc((var(--header-height) - var(--search-box-height)) / 2);
+  right: 5%;
   position: absolute;
-  background: #F25116;
-  border: none;
+  color: white;
+  font-weight: 800;
+  float: right;
+  outline: none;
+  background: var(--main-color);
+  border: 2px solid var(--main-color);
   border-radius: 0 5px 5px 0;
   box-sizing: border-box;
 }
 
+@media (min-width: 768px) and (max-width: 1119px) {
+  #search-box button {
+    width: 12%;
+  }
+}
 </style>

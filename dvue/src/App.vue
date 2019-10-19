@@ -1,14 +1,6 @@
 <template>
   <div id="app">
     <MyHeader></MyHeader>
-
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-      <li></li>
-    </ul>
   </div>
 </template>
 
@@ -25,10 +17,14 @@ export default {
 
 <style>
 /* 全局样式表 */
-
+:root {
+  --main-color: #F50000;
+  --header-height: 70px;
+  --search-box-height: calc(var(--header-height) / 1.75);
+  font-size: 10px;
+}
 body{
   margin: 0px;
-  font-size: 16px;
 }
 
 a {
@@ -40,37 +36,7 @@ button {
   cursor: pointer;
 }
 
-/* 测试 */
-
-ul li:nth-child(1) {
-  width: 200px;
-  height: 30px;
-  background-color: #A7C8F2;
-}
-ul li:nth-child(2) {
-  width: 200px;
-  height: 30px;
-  background-color: #048ABF;
-}
-ul li:nth-child(3) {
-  width: 200px;
-  height: 30px;
-  background-color: #027368;
-}
-ul li:nth-child(4) {
-  width: 200px;
-  height: 30px;
-  background-color: #F25116;
-}
-ul li:nth-child(5) {
-  width: 200px;
-  height: 30px;
-  background-color: #0D0D0D;
-}
-
 #app {
   width: 100%;
-
 }
 </style>
-

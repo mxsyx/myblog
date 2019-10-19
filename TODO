@@ -23,13 +23,3 @@
 11. 播放页仿真影院
 
 12. 增添两路播放源
-
-框架
-Bootstrap.css + Vue.js
-
-配色主题 
-Sencillo-1-hex { color: #273E4D; }
-Sencillo-2-hex { color: #F25C05; }
-Sencillo-3-hex { color: #F24405; }
-Sencillo-4-hex { color: #A62F03; }
-Sencillo-5-hex { color: #03080B; }
