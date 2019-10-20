@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <MyHeader></MyHeader>
+    <Navigation></Navigation>
   </div>
 </template>
 
 <script>
 import MyHeader from '@/components/MyHeader'
+import Navigation from '@/components/Navigation'
 
 export default {
   name: 'app',
   components: {
-    MyHeader
+    MyHeader,
+    Navigation
   }
 };
 </script>
@@ -18,13 +21,14 @@ export default {
 <style>
 /* 全局样式表 */
 :root {
+  font-size: 20px;
   --main-color: #F50000;
-  --header-height: 70px;
-  --search-box-height: calc(var(--header-height) / 1.75);
-  font-size: 10px;
+  --nav-color: #344950
 }
+
 body{
   margin: 0px;
+  background-color: rgb(240,240,240);
 }
 
 a {
@@ -34,6 +38,11 @@ a {
 
 button {
   cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0px;
 }
 
 #app {

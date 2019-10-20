@@ -206,3 +206,25 @@
     display: none !important;
   }
 }
+
+/* 显示元素 */
+.visible-sm,
+.visible-md,
+.visible-lg {
+  display: none !important;
+}
+@media (max-width: 767px) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .visible-md {
+    display: block !important;
+  }
+}
+@media (min-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+}

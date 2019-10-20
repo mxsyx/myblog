@@ -20,22 +20,22 @@ export default {
 
 <style scoped>
 #my-header {
-  height: var(--header-height);
+  height: 3.5rem;
   background-color: #34495E;
 }
 
 #logo a {
   color: white;
-  font-size: 3.4rem;
+  font-size: 1.7rem;
   font-weight: 800;
-  line-height: var(--header-height);
-  margin: 0rem 1.6rem 0rem 2.4rem;
+  line-height: 3.5rem;
+  margin: 0rem 0.8rem 0rem 1.2rem;
 }
 
 #logo span {
   color: #AAAAAA;
   user-select: none;
-  font-size: 1.4rem;
+  font-size: 0.7rem;
   font-weight: 800;
 }
 
@@ -45,13 +45,13 @@ export default {
 
 #search-box input {
   width: 50%;
-  height: var(--search-box-height);
+  height: 2rem;
   outline: none;
-  font-size: 1.2rem;
-  padding-left: 1rem;
+  font-size: 0.6rem;
+  padding-left: 0.5rem;
   float: right;
   margin-right: 5%;
-  margin-top: calc((var(--header-height) - var(--search-box-height)) / 2);
+  margin-top: 0.75rem;
   border: 2px solid var(--main-color);
   border-radius: 5px;
   box-sizing: border-box;
@@ -59,8 +59,8 @@ export default {
 
 #search-box button {
   width: 8%;
-  height: var(--search-box-height);
-  top: calc((var(--header-height) - var(--search-box-height)) / 2);
+  height: 2rem;
+  top: 0.75rem;
   right: 5%;
   position: absolute;
   color: white;
