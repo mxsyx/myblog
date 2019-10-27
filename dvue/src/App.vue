@@ -2,18 +2,21 @@
   <div id="app">
     <MyHeader></MyHeader>
     <Navigation></Navigation>
+    <Lb></Lb>
   </div>
 </template>
 
 <script>
 import MyHeader from '@/components/MyHeader'
 import Navigation from '@/components/Navigation'
+import Lb from '@/components/Lb'
 
 export default {
   name: 'app',
   components: {
     MyHeader,
-    Navigation
+    Navigation,
+    Lb,
   }
 };
 </script>

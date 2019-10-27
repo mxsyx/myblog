@@ -97,8 +97,8 @@ export default {
   },
   methods: {
     toggle: function() {
-      let display = this.navDisplay ? '600px': '0px';
-      document.getElementById('nav-menu').style.maxHeight = display;
+      const display = this.navDisplay ? '30rem': '2rem';
+      document.getElementById('nav').style.maxHeight = display;
       this.navDisplay = !this.navDisplay;
     }
   }
@@ -107,19 +107,14 @@ export default {
 
 <style scoped>
 #nav {
-  height: 2rem;
+  max-height: 2rem;
+  overflow: hidden; 
   background-color: var(--nav-color);
+  transition: all 0.8s linear;
 }
 
 #nav-menu {
   margin: 0px auto;
-  transition: all 1s linear;
-}
-@media (max-width: 767px) {
-  #nav-menu {
-    max-height: 0px;
-    overflow: hidden;
-  }
 }
 
 @media (max-width: 767px) {
@@ -228,6 +223,7 @@ export default {
 }
 
 #nav-menu ul {
+  z-index: 15;
   position: absolute;
   line-height: 2rem;
   font-size: 0.9rem;
