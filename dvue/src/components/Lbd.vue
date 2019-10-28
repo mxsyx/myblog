@@ -228,7 +228,7 @@ export default {
 .lb-box {
   width: 86vw;
   height: 28vw;
-  margin: 1.55rem auto;
+  margin: 25px auto;
   position: relative;
   overflow: hidden;
 }
@@ -270,13 +270,13 @@ export default {
   display: block;
   position: absolute;
   bottom: 0px;
-  padding: 0.75rem;
+  padding: 15px;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
 }
 @media (max-width: 568px) {
   .lb-item > a > span {
-    padding: 0.5rem;
+    padding: 10px;
   }
 }
 
@@ -313,7 +313,7 @@ export default {
   position: absolute;
   right: 10px;
   top: 0px;
-  padding: 0.25rem 0.15rem;
+  padding: 5px 3px;
   border-radius: 6px;
   list-style: none;
   user-select: none;
@@ -321,15 +321,15 @@ export default {
 }
 
 .lb-sign li {
-  width: 1.1rem;
-  height: 1rem;
-  font-size: 0.7rem;
+  width: 22px;
+  height: 20px;
+  font-size: 14px;
   font-weight: 500;
-  line-height: 1rem;
+  line-height: 20px;
   text-align: center;
   float: left;
   color: #aaa;
-  margin: auto 0.2rem;
+  margin: auto 4px;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -345,7 +345,7 @@ export default {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2.5rem;
+  font-size: 50px;
   font-weight: 900;
   user-select: none;
   background-color: rgba(0, 0, 0, 0.7);
@@ -356,20 +356,20 @@ export default {
 }
 @media (max-width: 568px) {
   .lb-ctrl {
-    font-size: 1.5rem;
+    font-size: 30px;
   }
 }
 .lb-ctrl.left {
-  left: -2.5rem;
+  left: -50px;
 }
 .lb-ctrl.right {
-  right: -2.5rem;
+  right: -50px;
 }
 .lb-box:hover .lb-ctrl.left {
-  left: 0.5rem;
+  left: 10px;
 }
 .lb-box:hover .lb-ctrl.right {
-  right: 0.5rem;
+  right: 10px;
 }
 .lb-ctrl:hover {
   background-color: #000;
