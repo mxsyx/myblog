@@ -3,6 +3,7 @@
     <MyHeader></MyHeader>
     <Navigation></Navigation>
     <Lb></Lb>
+    <Main></Main>
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import MyHeader from '@/components/MyHeader'
 import Navigation from '@/components/Navigation'
 import Lb from '@/components/Lb'
+import Main from '@/components/Main'
 
 export default {
   name: 'app',
@@ -17,6 +19,7 @@ export default {
     MyHeader,
     Navigation,
     Lb,
+    Main,
   }
 };
 </script>

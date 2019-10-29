@@ -40,10 +40,6 @@ export default {
       numItems: 5,
       // 轮播方向
       direction: 'left',
-      // 是否监听键盘事件
-      moniterKeyEvent: true,
-      // 是否监听屏幕滑动事件
-      moniterTouchEvent: true,
 
       // 当前图片索引
       curIndex: 0,
@@ -152,7 +148,6 @@ export default {
 
     // 处理滑动屏幕事件
     touchScreen: function(event) {
-      if (!this.moniterTouchEvent) return ;
       if (event.type == "touchstart") {
         this.startX = event.touches[0].pageX;
         this.startY = event.touches[0].pageY;
@@ -176,16 +171,6 @@ export default {
           // 向左侧滑动屏幕，模拟点击右控件
           this.clickCtrl('left');
         }
-      }
-    },
-
-    // 处理键盘按下事件
-    keyDown: function(event) {
-      if (!this.moniterKeyEvent) return ;
-      if (event && event.keyCode == 37) {
-        this.clickCtrl('left');
-      } else if (event && event.keyCode == 39) {
-        this.clickCtrl('right');
       }
     },
 
