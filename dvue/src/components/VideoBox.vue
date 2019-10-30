@@ -6,7 +6,7 @@
         <span></span>
       </a>
     </div>
-    <div class="video-info">
+    <div class="video-desc">
       <a v-bind:href="href">{{ name }}</a>
       <span>{{ actors }}</span>
     </div>
@@ -22,17 +22,15 @@ export default {
 <style>
 .videobox {
   overflow: hidden;
-  margin-top: 1rem;
-  padding: 0rem 0.65rem;
+  margin: 0.5rem 0rem 0rem;
+  padding-right: 0.75rem;
   box-sizing: border-box;
 }
-
 @media (max-width: 767px) {
   .videobox {
-    padding: 0rem 0.2rem;
+    padding-right: 0.45rem;
   }
 }
-
 
 /* 视频图片  */
 .video-img a {
@@ -65,12 +63,12 @@ export default {
 }
 
 /* 视频名字、演员  */
-.video-info {
+.video-desc {
   width: 100%;
 }
 
-.video-info a,
-.video-info span {
+.video-desc a,
+.video-desc span {
   width: 100%;
   display: block;
   white-space: nowrap;
@@ -78,17 +76,17 @@ export default {
   text-overflow: ellipsis;
 }
 
-.video-info a {
+.video-desc a {
   font-size: 0.8rem;
   padding: 0.3rem 0rem 0.2rem;
   color:#161616;
 }
-.video-info a:hover {
+.video-desc a:hover {
   color: #f50000;
   text-decoration: underline;
 }
 
-.video-info span {
+.video-desc span {
   font-size: 0.6rem;
   color: #555555;
 }

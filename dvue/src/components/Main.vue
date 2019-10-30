@@ -1,20 +1,13 @@
 <template>
   <div id="main">
-    <div id="movie-show" class="row">
-      <VideoBox
-        v-for="movieItem in movieItems"
-        v-bind:key="movieItem.id"
-        v-bind:href="movieItem.href"
-        v-bind:imgSrc="movieItem.imgSrc"
-        v-bind:name="movieItem.name"
-        v-bind:actors="movieItem.actors"
-      ></VideoBox>
-    </div>
+    <VideoShow v-bind:movieItems="movieItems"></VideoShow>
+    <Recommend></Recommend>
   </div>
 </template>
 
 <script>
-import VideoBox from '@/components/VideoBox'
+import VideoShow from '@/components/VideoShow'
+import Recommend from '@/components/Recommend'
 
 export default {
   data: function() {
@@ -95,20 +88,16 @@ export default {
       ]
     }
   },
-
   components: {
-    VideoBox,
+    VideoShow,
+    Recommend,
   }
-
 }
 </script>
 
-<style>
-
+<style scoped>
 #main {
   width: 86%;
   margin: auto;
-  background-color: #fff;
 }
-
 </style>
