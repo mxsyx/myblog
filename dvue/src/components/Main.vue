@@ -97,7 +97,7 @@ export default {
 
 <style scoped>
 #main {
-  width: 86%;
+  width: 90%;
   margin: auto;
 }
 </style>

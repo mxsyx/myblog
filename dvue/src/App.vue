@@ -28,13 +28,13 @@ export default {
 /* 全局样式表 */
 :root {
   font-size: 20px;
-  --main-color: #F50000;
-  --nav-color: #344950
+  --main-color: #34495E;
+  --sub-color: #f50000;
+  --nav-color: #344950;
 }
 
 body{
   margin: 0px;
-  background-color: rgb(240,240,240);
 }
 
 a {

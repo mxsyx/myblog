@@ -211,8 +211,8 @@ export default {
 
 <style scoped>
 .lb-box {
-  width: 86vw;
-  height: 28vw;
+  width: 90vw;
+  height: 30vw;
   margin: 1.55rem auto;
   position: relative;
   overflow: hidden;

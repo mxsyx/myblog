@@ -27,6 +27,12 @@
           </span>
         </div>
         <div class="col-lg-2">
+          <span class="info-tip">年代：</span>
+          <span class="info-content">
+            <a href="">2019</a>
+          </span>
+        </div>
+        <div class="col-lg-2">
           <span class="info-tip">地区：</span>
           <span class="info-content">
             <a href="">美国</a>
@@ -37,22 +43,30 @@
           <span class="info-content">英语</span>
         </div>
         <div class="col-lg-2">
-          <span class="info-tip">年代：</span>
-          <span class="info-content">
-            <a href="">2019</a>
-          </span>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3">
           <span class="info-tip">总播放量：</span>
           <span class="info-content">2020</span>
         </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <span class="info-tip">简介：</span>
+          <span class="info-content">警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
+        </div>
+      </div>
+      <div class="row">
         <div class="col-lg-3">
           <span class="info-tip">更新日期：</span>
           <span class="info-content">2019-10-30</span>
         </div>
       </div>
+      <button class="btn">
+        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+        <span>顶</span>
+      </button>
+      <button class="btn">
+        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+        <span>踩</span>
+      </button>
     </div>
   </div>
 </template>
@@ -100,12 +114,20 @@ export default {
 .info-content,
 .info-content a {
   font-size: 0.8rem;
-  color: #252525;
+  color: rgb(51,51,51);
 }
 
 .info-content a:hover {
   color: #F50000;
   text-decoration: underline;
+}
+
+.btn {
+  width: 3rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  background-color: transparent;
+  border:none;
 }
 
 </style>

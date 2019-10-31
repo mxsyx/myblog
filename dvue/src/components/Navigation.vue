@@ -218,7 +218,7 @@ export default {
 }
 
 .back {
-  background: var(--main-color);
+  background: var(--sub-color);
   transform: rotatex(-90deg) translatez(1rem);
 }
 

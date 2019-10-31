@@ -52,7 +52,7 @@ export default {
   float: right;
   margin-right: 5%;
   margin-top: 0.75rem;
-  border: 2px solid var(--main-color);
+  border: 2px solid var(--sub-color);
   border-radius: 5px;
   box-sizing: border-box;
 }
@@ -67,8 +67,8 @@ export default {
   font-weight: 800;
   float: right;
   outline: none;
-  background: var(--main-color);
-  border: 2px solid var(--main-color);
+  background: var(--sub-color);
+  border: 2px solid var(--sub-color);
   border-radius: 0 5px 5px 0;
   box-sizing: border-box;
 }
