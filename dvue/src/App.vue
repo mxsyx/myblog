@@ -30,6 +30,7 @@ export default {
   font-size: 20px;
   --main-color: #34495E;
   --sub-color: #f50000;
+  --third-color: #1B9AF7;
   --nav-color: #344950;
 }
 

@@ -1,8 +1,9 @@
 <template>
   <div class="video-info row">
-    <img class="col-lg-3" alt="loss"
-         src="https://ae01.alicdn.com/kf/H3025e6e7b68e4dfb8ad7af25c2220d42Z.jpg">
-    <div class="col-lg-9">
+    <div class="video-info-l col-lg-2">
+      <img alt="loss" src="https://ae01.alicdn.com/kf/H3025e6e7b68e4dfb8ad7af25c2220d42Z.jpg">
+    </div>
+    <div class="video-info-r col-lg-10">
       <h2>天作谜案</h2>
       <div>
         <span class="info-tip">导演：</span>
@@ -47,11 +48,12 @@
           <span class="info-content">2020</span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-lg-12">
+      <div class="row intro">
+        <div class="col-lg-11">
           <span class="info-tip">简介：</span>
           <span class="info-content">警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
         </div>
+        <i class="col-lg-1 fa fa-angle-down" title="详情"></i>
       </div>
       <div class="row">
         <div class="col-lg-3">
@@ -59,51 +61,95 @@
           <span class="info-content">2019-10-30</span>
         </div>
       </div>
-      <button class="btn">
-        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-        <span>顶</span>
-      </button>
-      <button class="btn">
-        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
-        <span>踩</span>
-      </button>
+
+      <div>
+        <button class="btn btn-play">
+          <i class="fa fa-play"></i>
+          <span> 立即播放</span>
+        </button>
+        <button class="btn btn-download">
+          <i class="fa fa-download" aria-hidden="true"></i>
+          <span> 下载</span>
+        </button>
+        <button class="btn btn-collection">
+          <i class="fa fa-star"></i>
+          <span> 收藏</span>
+        </button>
+        <button class="btn btn-score">
+          <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+          <span> 顶 </span>
+          <span>(0)</span>
+        </button>
+        <button class="btn btn-score">
+          <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+          <span> 踩 </span>
+          <span>(0)</span>
+        </button>
+        <button class="btn btn-share">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+          <span> 分享</span>
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// 名字 导演 主演 类型 地区 语言 年代 更新 总播放量 点赞 吐槽
 export default {
 
 }
 </script>
 
 <style scoped>
-
 .video-info {
   width: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   box-sizing: border-box;
-  background-color: #fff;
+  background: linear-gradient(to bottom, var(--main-color), var(--main-color), 20%,
+                              var(--main-color), 20%,#ffffff);
+  margin-bottom: 400px;
 }
 
-.video-info img {
-  height: 100%;
+.video-info-l img {
+  width: 100%;
+  border-radius: 8px;
 }
 
-.video-info > div {
-  padding: 0rem 0.8rem;
+/* 右侧视频信息 */
+.video-info-r {
+  overflow: hidden;
+  padding: 0rem 1rem;
   box-sizing: border-box;
 }
 
-.video-info > div h2 {
-  margin: 0.6rem 0rem;
-  font-size: 1rem;
+.video-info-r h2 {
+  color:#fff;
+  font-size: 1.2rem;
   font-weight: 400;
+  margin: 0.6rem 0rem;
 }
 
-.video-info > div > div {
-  padding: 0.2rem 0rem;
+.video-info-r > div {
+  padding: 0.3rem 0rem;
+}
+.video-info-r > div:nth-child(2) {
+  padding: 0.8rem 0rem 0.3rem;
+}
+
+.intro > div {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.intro > i {
+  color: #444;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+  cursor: pointer;
+}
+.intro > i:hover {
+  color: var(--sub-color);
 }
 
 .info-tip {
@@ -122,12 +168,42 @@ export default {
   text-decoration: underline;
 }
 
-.btn {
-  width: 3rem;
-  height: 1.5rem;
-  margin-right: 1rem;
+
+/* 按钮组 */
+.btn-play {
+  background-color: var(--sub-color);
+}
+.btn-play:hover {
+  box-shadow: 0 0 0.6rem var(--sub-color);
+}
+
+.btn-download {
+  background-color: var(--main-color);
+}
+.btn-download:hover {
+  box-shadow: 0 0 0.6rem var(--main-color);
+}
+
+.btn-collection {
+  background-color: var(--third-color);
+}
+.btn-collection:hover {
+  box-shadow: 0 0 0.6rem var(--third-color);
+}
+
+.btn-score {
+  color: #333333;
+  background-color: #EEEEEE;
+  padding: 0rem 0.4rem;
+}
+.btn-score:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0.6rem var(--third-color);
+}
+
+.btn-share {
+  color: #000;
   background-color: transparent;
-  border:none;
 }
 
 </style>
