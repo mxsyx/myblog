@@ -89,14 +89,19 @@
           <i class="fa fa-share-alt" aria-hidden="true"></i>
           <span> 分享</span>
         </button>
+        <Share></Share>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {
+import Share from '@/components/Share.vue'
 
+export default {
+  components: {
+    Share,
+  }
 }
 </script>
 
