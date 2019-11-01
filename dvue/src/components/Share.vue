@@ -3,17 +3,14 @@
     <svg width="32" height="32">
       <use xlink:href="../assets/icon/icon.svg#weibo" />
     </svg>
-    <svg width="32" height="32">
-      <use xlink:href="../assets/icon/icon.svg#zhihu" />
+    <svg width="34" height="34">
+      <use xlink:href="../assets/icon/icon.svg#douban" />
     </svg>
     <svg width="32" height="32">
       <use xlink:href="../assets/icon/icon.svg#wechat" />
     </svg>
     <svg width="32" height="32">
       <use xlink:href="../assets/icon/icon.svg#qq" />
-    </svg>
-    <svg width="32" height="32">
-      <use xlink:href="../assets/icon/icon.svg#wechat-friends" />
     </svg>
     <svg width="32" height="32">
       <use xlink:href="../assets/icon/icon.svg#qqzone" />
@@ -39,8 +36,8 @@ export default {
 
 <style scoped>
 .share-box svg{
-  padding: 2px;
   cursor: pointer;
   vertical-align: middle;
+  margin: 2px;
 }
 </style>
