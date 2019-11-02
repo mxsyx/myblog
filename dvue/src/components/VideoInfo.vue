@@ -89,7 +89,12 @@
           <i class="fa fa-share-alt" aria-hidden="true"></i>
           <span> 分享</span>
         </button>
-        <Share></Share>
+        <Share
+          v-bind:name="name"
+          v-bind:href="href"
+          v-bind:summary="summary"
+          v-bind:imgSrc="imgSrc"
+        ></Share>
       </div>
     </div>
   </div>
@@ -99,6 +104,14 @@
 import Share from '@/components/Share.vue'
 
 export default {
+  data: function() {
+    return {
+      name: "幽灵之城",
+      href: "https://zizaixian.top/info/movie/18724/",
+      summary: "这是一部反时间赛跑的惊悚片，它突出了社交媒体现象潜在的黑暗一面",
+      imgSrc: "https://zizaixian.top/media/imgm/2019-10-30/1572373824816575.jpg"
+    }
+  },
   components: {
     Share,
   }
