@@ -131,13 +131,18 @@ export default {
 
 <style scoped>
 .share-box {
+  display: none;
   margin: 0px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  width: 260px;
 }
 
 .share-box li {
   display: inline-block;
   cursor: pointer;
   position: relative;
+  padding: 2px;
 }
 .share-box li:hover svg{
   opacity: 0.8;
@@ -145,7 +150,6 @@ export default {
 
 .share-box li svg {
   vertical-align: middle;
-  margin: 2px;
 }
 
 .qrcode-box {
@@ -171,14 +175,14 @@ export default {
   padding: 15px;
 }
 
-.show {
-  display: block;
-}
-
 #copy {
   width: 1px;
   height: 1px;
   opacity: 0;
   z-index: -10;
+}
+
+.show {
+  display: block;
 }
 </style>

@@ -1,42 +1,42 @@
 <template>
   <div class="video-info row">
     <div class="video-info-l col-lg-2">
-      <img alt="loss" src="https://ae01.alicdn.com/kf/H3025e6e7b68e4dfb8ad7af25c2220d42Z.jpg">
+      <img alt="loss" src="https://ae01.alicdn.com/kf/H3025e6e7b68e4dfb8ad7af25c2220d42Z.jpg" />
     </div>
     <div class="video-info-r col-lg-10">
       <h2>天作谜案</h2>
       <div>
         <span class="info-tip">导演：</span>
         <span class="info-content">
-          <a href="">阿沛·乔普拉</a>
+          <a href>阿沛·乔普拉</a>
         </span>
       </div>
       <div>
         <span class="info-tip">主演：</span>
         <span class="info-content">
-          <a href="">施坦·马洛萨</a>、
-          <a href="">索娜什·辛哈</a>、
-          <a href="">阿克夏耶·坎纳</a>、
-          <a href="">曼迪拉·贝迪</a>
+          <a href>施坦·马洛萨</a>、
+          <a href>索娜什·辛哈</a>、
+          <a href>阿克夏耶·坎纳</a>、
+          <a href>曼迪拉·贝迪</a>
         </span>
       </div>
       <div class="row">
         <div class="col-lg-2">
           <span class="info-tip">类型：</span>
           <span class="info-content">
-            <a href="">悬疑</a>
+            <a href>悬疑</a>
           </span>
         </div>
         <div class="col-lg-2">
           <span class="info-tip">年代：</span>
           <span class="info-content">
-            <a href="">2019</a>
+            <a href>2019</a>
           </span>
         </div>
         <div class="col-lg-2">
           <span class="info-tip">地区：</span>
           <span class="info-content">
-            <a href="">美国</a>
+            <a href>美国</a>
           </span>
         </div>
         <div class="col-lg-2">
@@ -51,7 +51,9 @@
       <div class="row intro">
         <div class="col-lg-11">
           <span class="info-tip">简介：</span>
-          <span class="info-content">警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
+          <span
+            class="info-content"
+          >警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
         </div>
         <i class="col-lg-1 fa fa-angle-down" title="详情"></i>
       </div>
@@ -65,43 +67,43 @@
       <div>
         <button class="btn btn-play">
           <i class="fa fa-play"></i>
-          <span> 立即播放</span>
+          <span>立即播放</span>
         </button>
         <button class="btn btn-download">
           <i class="fa fa-download" aria-hidden="true"></i>
-          <span> 下载</span>
+          <span>下载</span>
         </button>
         <button class="btn btn-collection">
           <i class="fa fa-star"></i>
-          <span> 收藏</span>
+          <span>收藏</span>
         </button>
         <button class="btn btn-score">
           <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-          <span> 顶 </span>
+          <span>顶</span>
           <span>(0)</span>
         </button>
         <button class="btn btn-score">
           <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
-          <span> 踩 </span>
+          <span>踩</span>
           <span>(0)</span>
         </button>
         <button class="btn btn-share">
           <i class="fa fa-share-alt" aria-hidden="true"></i>
-          <span> 分享</span>
+          <span>分享</span>
+          <Share
+            v-bind:name="name"
+            v-bind:href="href"
+            v-bind:summary="summary"
+            v-bind:imgSrc="imgSrc"
+          ></Share>
         </button>
-        <Share
-          v-bind:name="name"
-          v-bind:href="href"
-          v-bind:summary="summary"
-          v-bind:imgSrc="imgSrc"
-        ></Share>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Share from '@/components/Share.vue'
+import Share from "@/components/Share.vue";
 
 export default {
   data: function() {
@@ -110,12 +112,12 @@ export default {
       href: "https://zizaixian.top/info/movie/18724/",
       summary: "这是一部反时间赛跑的惊悚片，它突出了社交媒体现象潜在的黑暗一面",
       imgSrc: "https://zizaixian.top/media/imgm/2019-10-30/1572373824816575.jpg"
-    }
+    };
   },
   components: {
-    Share,
+    Share
   }
-}
+};
 </script>
 
 <style scoped>
@@ -123,8 +125,15 @@ export default {
   width: 100%;
   padding: 0.8rem;
   box-sizing: border-box;
-  background: linear-gradient(to bottom, var(--main-color), var(--main-color), 20%,
-                              var(--main-color), 20%,#ffffff);
+  background: linear-gradient(
+    to bottom,
+    var(--main-color),
+    var(--main-color),
+    20%,
+    var(--main-color),
+    20%,
+    #ffffff
+  );
   margin-bottom: 400px;
 }
 
@@ -141,7 +150,7 @@ export default {
 }
 
 .video-info-r h2 {
-  color:#fff;
+  color: #fff;
   font-size: 1.2rem;
   font-weight: 400;
   margin: 0.6rem 0rem;
@@ -152,6 +161,9 @@ export default {
 }
 .video-info-r > div:nth-child(2) {
   padding: 0.8rem 0rem 0.3rem;
+}
+.video-info-r > div:last-child {
+  position: relative;
 }
 
 .intro > div {
@@ -178,14 +190,13 @@ export default {
 .info-content,
 .info-content a {
   font-size: 0.8rem;
-  color: rgb(51,51,51);
+  color: rgb(51, 51, 51);
 }
 
 .info-content a:hover {
-  color: #F50000;
+  color: #f50000;
   text-decoration: underline;
 }
-
 
 /* 按钮组 */
 .btn-play {
@@ -211,7 +222,7 @@ export default {
 
 .btn-score {
   color: #333333;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   padding: 0rem 0.4rem;
 }
 .btn-score:hover {
@@ -222,6 +233,16 @@ export default {
 .btn-share {
   color: #000;
   background-color: transparent;
+  position: relative;
+}
+.btn-share:hover .share-box {
+  display: block;
 }
 
+.btn-share .share-box {
+  position: absolute;
+  top: -120%;
+  left: -90%;
+  transition: all 1.0s linear;
+}
 </style>
