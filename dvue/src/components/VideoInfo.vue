@@ -199,6 +199,11 @@ export default {
 }
 
 /* 按钮组 */
+
+.btn i {
+  margin-right: 3px;
+}
+
 .btn-play {
   background-color: var(--sub-color);
 }
