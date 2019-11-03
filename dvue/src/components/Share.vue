@@ -1,49 +1,52 @@
 <template>
   <ul class="share-box">
-    <li v-on:click="shareToWeibo" title="分享到新浪微博">
-      <svg width="32" height="32">
+    <li v-on:click="shareToWeibo">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#weibo" />
       </svg>
+      <span>微博</span>
     </li>
-    <li v-on:click="shareToDouban" title="分享到豆瓣">
-      <svg width="34" height="34">
+    <li v-on:click="shareToDouban">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#douban" />
       </svg>
+      <span>豆瓣</span>
+    </li>
+    <li v-on:click="shareToTieba">
+      <svg width="40" height="40">
+        <use xlink:href="../assets/icon/icon.svg#tieba" />
+      </svg>
+      <span>贴吧</span>
     </li>
     <li v-on:mouseenter="shareToWeChat" v-on:mouseleave="shareToWeChat">
-      <svg width="32" height="32">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#wechat" />
       </svg>
-      <div class="qrcode-box" v-bind:class="{show: showQRCode2}">
+      <span>微信</span>
+      <div class="qrcode-box" v-bind:class="{show: showQRCode}">
         <p>微信扫一扫分享给好友</p>
-        <div ref="qrcode2"></div>
+        <div ref="qrcode"></div>
       </div>
     </li>
-    <li v-on:click="shareToQQ" title="分享给QQ好友">
-      <svg width="32" height="32">
+    <li v-on:click="shareToQQ">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#qq" />
       </svg>
+      <span>QQ</span>
     </li>
-    <li v-on:click="shareToQQZone" title="分享到QQ空间">
-      <svg width="32" height="32">
+    <li v-on:click="shareToQQZone">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#qqzone" />
       </svg>
-    </li>
-    <li v-on:mouseenter="shareToPhone" v-on:mouseleave="shareToPhone">
-      <svg width="24" height="24">
-        <use xlink:href="../assets/icon/icon.svg#phone" />
-      </svg>
-      <div class="qrcode-box" v-bind:class="{show: showQRCode1}">
-        <p>手机扫码观看</p>
-        <div ref="qrcode1"></div>
-      </div>
+      <span>空间</span>
     </li>
     <li v-on:click="shareToLink" title="复制链接地址">
-      <svg width="22" height="22">
+      <svg width="40" height="40">
         <use xlink:href="../assets/icon/icon.svg#link" />
-      </svg>  
-      <input id="copy" ref="copy" >
+      </svg>
+      <span>链接</span>
     </li>
+    <input id="copy" ref="copy" >
   </ul>
 </template>
 
@@ -57,14 +60,12 @@ export default {
     return {
       source: "https://zizaixian.top",
       desc: "我发现了一部超好看的影片，推荐给你吧！",
-      showQRCode1: false,
-      showQRCode2: false,
+      showQRCode: false,
     };
   },
 
   mounted: function() {
-    this.createQrcode(this.$refs.qrcode1);
-    this.createQrcode(this.$refs.qrcode2);
+    this.createQrcode(this.$refs.qrcode);
     this.$refs.copy.setAttribute('value',this.href);
   },
 
@@ -85,8 +86,16 @@ export default {
       window.open(link);
     },
 
+    shareToTieba: function() {
+      const link =
+        `http://tieba.baidu.com/f/commit/share/openShareApi?` +
+        `url=${this.href}&title=${this.name}` +
+        `&desc=${this.summary}&pic=${this.imgSrc}`;
+      window.open(link);
+    },
+
     shareToWeChat: function() {
-      this.showQRCode2 = !this.showQRCode2;
+      this.showQRCode = !this.showQRCode;
     },
 
     shareToQQ: function() {
@@ -105,10 +114,6 @@ export default {
       window.open(link);
     },
 
-    shareToPhone: function() {
-      this.showQRCode1 = !this.showQRCode1;
-    },
-
     shareToLink: function() {
       this.$refs.copy.focus();
       this.$refs.copy.select();
@@ -116,7 +121,7 @@ export default {
     },
 
     createQrcode: function(dom) {
-      const qrcode = new QRCode(dom, {
+      new QRCode(dom, {
         text: this.href,
         width: 150,
         height: 150,
@@ -131,24 +136,29 @@ export default {
 
 <style scoped>
 .share-box {
-  display: none;
   margin: 0px;
-  border-radius: 5px;
-  width: 260px;
 }
 
 .share-box li {
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding: 2px;
+  padding: 6px;
+}
+
+.share-box li svg {
+  vertical-align: middle;
 }
 .share-box li:hover svg{
   opacity: 0.8;
 }
 
-.share-box li svg {
-  vertical-align: middle;
+.share-box li span {
+  display: block;
+  color: #333;
+  font-size: 12px;
+  margin-top: 3px;
+  text-align: center;
 }
 
 .qrcode-box {

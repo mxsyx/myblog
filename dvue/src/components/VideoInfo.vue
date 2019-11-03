@@ -51,11 +51,9 @@
       <div class="row intro">
         <div class="col-lg-11">
           <span class="info-tip">简介：</span>
-          <span
-            class="info-content"
-          >警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
+          <span class="info-content" v-bind:class="{wrap: showDetaile}">警官德夫正在调查一宗双重谋杀案，只有两名证人，他们也是主要嫌疑人。嫌疑犯之一，著名的作家；另一个，是年轻的家庭主妇玛雅。不同的故事，却在同一个命运之夜联系到了一起，而背后的真相也远非表面这么简单。这是一部没有歌舞也没有外挂的印度电影，只有悬疑和逻辑推理。</span>
         </div>
-        <i class="col-lg-1 fa fa-angle-down" title="详情"></i>
+        <i class="col-lg-1 fa fa-angle-down" title="详情" v-on:click="switchShowIntro"></i>
       </div>
       <div class="row">
         <div class="col-lg-3">
@@ -63,7 +61,6 @@
           <span class="info-content">2019-10-30</span>
         </div>
       </div>
-
       <div>
         <button class="btn btn-play">
           <i class="fa fa-play"></i>
@@ -87,23 +84,29 @@
           <span>踩</span>
           <span>(0)</span>
         </button>
-        <button class="btn btn-share">
+        <button class="btn btn-share" v-on:click="openShareModal">
           <i class="fa fa-share-alt" aria-hidden="true"></i>
           <span>分享</span>
-          <Share
-            v-bind:name="name"
-            v-bind:href="href"
-            v-bind:summary="summary"
-            v-bind:imgSrc="imgSrc"
-          ></Share>
         </button>
       </div>
     </div>
+    <Modal ref="shareModal"
+           v-bind:modalTip="modalTip"
+    >
+      <Share
+        v-bind:name="name"
+        v-bind:href="href"
+        v-bind:summary="summary"
+        v-bind:imgSrc="imgSrc"
+      ></Share>
+    </Modal>
   </div>
+
 </template>
 
 <script>
 import Share from "@/components/Share.vue";
+import Modal from "@/components/Modal.vue";
 
 export default {
   data: function() {
@@ -111,11 +114,25 @@ export default {
       name: "幽灵之城",
       href: "https://zizaixian.top/info/movie/18724/",
       summary: "这是一部反时间赛跑的惊悚片，它突出了社交媒体现象潜在的黑暗一面",
-      imgSrc: "https://zizaixian.top/media/imgm/2019-10-30/1572373824816575.jpg"
+      imgSrc: "https://zizaixian.top/media/imgm/2019-10-30/1572373824816575.jpg",
+      modalTip: "喜欢就分享给好友吧",
+      showDetaile: false
     };
   },
+
+  methods: {
+    openShareModal: function() {
+      this.$refs.shareModal.openModal();
+    },
+    
+    switchShowIntro: function() {
+      this.showDetaile = !this.showDetaile;
+    }
+  },
+
   components: {
-    Share
+    Share,
+    Modal,
   }
 };
 </script>
@@ -170,6 +187,9 @@ export default {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+}
+.wrap {
+  white-space: normal;
 }
 
 .intro > i {
@@ -238,16 +258,8 @@ export default {
 .btn-share {
   color: #000;
   background-color: transparent;
-  position: relative;
-}
-.btn-share:hover .share-box {
-  display: block;
 }
 
-.btn-share .share-box {
-  position: absolute;
-  top: -120%;
-  left: -90%;
-  transition: all 1.0s linear;
-}
+
+
 </style>
