@@ -228,18 +228,3 @@
     display: block !important;
   }
 }
-
-/* 按钮样式 */
-.btn {
-  border: none;
-  outline: none;
-  color:#ffffff;
-  cursor: pointer;
-  border-radius: 5px;
-  padding: 0rem 1rem;
-  box-sizing: border-box;
-  font-size: 0.7rem;
-  line-height: 1.6rem;
-  transition: all 0.1s linear;
-  margin: 0px 8px;
-}
