@@ -2,18 +2,18 @@
   <div class="video-show">
     <header>
       <div>
-        <h5>最新电影</h5>
+        <h5>{{ headerTip }}</h5>
         <a href>More ></a>
       </div>
     </header>
     <div class="row">
       <VideoBox
-        v-for="movieItem in movieItems"
-        v-bind:key="movieItem.id"
-        v-bind:href="movieItem.href"
-        v-bind:imgSrc="movieItem.imgSrc"
-        v-bind:name="movieItem.name"
-        v-bind:actors="movieItem.actors"
+        v-for="videoItem in videoItems"
+        v-bind:key="videoItem.id"
+        v-bind:href="videoItem.href"
+        v-bind:imgSrc="videoItem.imgSrc"
+        v-bind:name="videoItem.name"
+        v-bind:actors="videoItem.actors"
       ></VideoBox>
     </div>
   </div>
@@ -23,7 +23,7 @@
 import VideoBox from '@/components/VideoBox'
 
 export default {
-  props: ['movieItems'],
+  props: ['headerTip', 'videoItems'],
   components: {
     VideoBox
   }

@@ -206,7 +206,6 @@ export default {
     var(--main-color), 20%,
     var(--main-color), 20%,
     #ffffff);
-  margin-bottom: 400px;
 }
 @media (max-width: 1119px) {
   .video-info {
