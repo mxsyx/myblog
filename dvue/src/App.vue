@@ -4,6 +4,7 @@
     <Navigation></Navigation>
     <Carousel></Carousel>
     <Main></Main>
+    <MyBottom></MyBottom>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import MyHeader from '@/components/MyHeader'
 import Navigation from '@/components/Navigation'
 import Carousel from '@/components/Carousel'
 import Main from '@/components/Main'
+import MyBottom from '@/components/MyBottom'
 
 export default {
   name: 'app',
@@ -20,6 +22,7 @@ export default {
     Navigation,
     Carousel,
     Main,
+    MyBottom
   },
   methods: {
     resize: function() {
