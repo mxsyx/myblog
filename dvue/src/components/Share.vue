@@ -138,6 +138,9 @@ export default {
 .share-box {
   margin: 0px;
 }
+.share-box * {
+  z-index: 1000;
+}
 
 .share-box li {
   display: inline-block;

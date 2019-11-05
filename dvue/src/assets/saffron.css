@@ -228,3 +228,81 @@
     display: block !important;
   }
 }
+
+/* 按钮样式 */
+.btn {
+  border: none;
+  outline: none;
+  color:#ffffff;
+  border-radius: 5px;
+  padding: 0rem 1rem;
+  box-sizing: border-box;
+  font-size: 0.7rem;
+  line-height: 1.6rem;
+  transition: all 0.1s linear;
+  margin: 0px 8px;
+}
+@media (max-width: 1119px) {
+  .btn {
+    padding: 0rem 0.6rem;
+  }
+}
+
+.btn i {
+  margin-right: 3px;
+}
+
+/* 播放按钮 */
+.btn-play {
+  background-color: var(--sub-color);
+}
+.btn-play:hover {
+  box-shadow: 0 0 0.6rem var(--sub-color);
+}
+
+/* 下载按钮 */
+.btn-download {
+  background-color: var(--main-color);
+}
+.btn-download:hover {
+  box-shadow: 0 0 0.6rem var(--main-color);
+}
+
+/* 收藏按钮 */
+.btn-collect {
+  background-color: var(--third-color);
+}
+.btn-collect:hover {
+  box-shadow: 0 0 0.6rem var(--third-color);
+}
+
+/* 评分按钮 */
+.btn-score {
+  color: #333333;
+  background-color: #eeeeee;
+  padding: 0rem 0.4rem;
+}
+.btn-score:hover {
+  opacity: 0.8;
+  box-shadow: 0 0 0.6rem var(--third-color);
+}
+
+/* 分享按钮 */
+.btn-share {
+  color: #000000;
+  background-color: transparent;
+}
+.btn-share:hover {
+  font-weight: 600;
+}
+
+.btn-channel {
+  color:#333333;
+  user-select: none;
+  background-color: transparent;
+}
+
+.btn-channel:hover {
+  color: var(--third-color);
+  text-decoration: underline;
+}

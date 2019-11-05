@@ -1,5 +1,8 @@
+<!-- Main Page -->
+
 <template>
-  <div id="main">
+  <div class="page">
+    <Carousel></Carousel>
     <VideoShow
       v-bind:headerTip="'最新电影'"
       v-bind:videoItems="movieItems"
@@ -20,6 +23,7 @@
 </template>
 
 <script>
+import Carousel from '@/components/Carousel'
 import VideoShow from '@/components/VideoShow'
 import Random from '@/components/Random'
 
@@ -179,15 +183,13 @@ export default {
     }
   },
   components: {
+    Carousel,
     VideoShow,
     Random,
   }
 }
 </script>
 
-<style scoped>
-#main {
-  width: 90%;
-  margin: auto;
-}
+<style>
+
 </style>

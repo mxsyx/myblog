@@ -202,18 +202,18 @@ export default {
   box-sizing: border-box;
   background: linear-gradient(
     to bottom, 
-    var(--main-color),
-    var(--main-color), 20%,
-    var(--main-color), 20%,
+    var(--nav-color),
+    var(--nav-color), 20%,
+    var(--nav-color), 20%,
     #ffffff);
 }
 @media (max-width: 1119px) {
   .video-info {
     background: linear-gradient(
       to bottom, 
-      var(--main-color),
-      var(--main-color), 25%,
-      var(--main-color), 25%,
+      var(--nav-color),
+      var(--nav-color), 25%,
+      var(--nav-color), 25%,
       #ffffff);
   }
 }
@@ -291,49 +291,5 @@ export default {
 .info-content a:hover {
   color: #f50000;
   text-decoration: underline;
-}
-
-/* 按钮组 */
-.btn i {
-  margin-right: 3px;
-}
-
-.btn-play {
-  background-color: var(--sub-color);
-}
-.btn-play:hover {
-  box-shadow: 0 0 0.6rem var(--sub-color);
-}
-
-.btn-download {
-  background-color: var(--main-color);
-}
-.btn-download:hover {
-  box-shadow: 0 0 0.6rem var(--main-color);
-}
-
-.btn-collect {
-  background-color: var(--third-color);
-}
-.btn-collect:hover {
-  box-shadow: 0 0 0.6rem var(--third-color);
-}
-
-.btn-score {
-  color: #333333;
-  background-color: #eeeeee;
-  padding: 0rem 0.4rem;
-}
-.btn-score:hover {
-  opacity: 0.8;
-  box-shadow: 0 0 0.6rem var(--third-color);
-}
-
-.btn-share {
-  color: #000000;
-  background-color: transparent;
-}
-.btn-share:hover {
-  font-weight: 600;
 }
 </style>
