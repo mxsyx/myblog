@@ -1,17 +1,54 @@
-import crypto from 'crypto';
+import { Database } from './database.mjs'
 
-/**
- * 加密字符串
- * @param content 需要加密的内容
- * @param salt    盐值
- * @param method  加密方式(默认sha256)
- * @param encode  编码方式(默认base64)
- * @returns 加密后的结果
- */
-function encrypt(content, salt, method='sha256', encode='base64') {
-  const hash = crypto.createHash(method);
-  const result  = hash.update(`${content}${salt}`).digest(encode);
-  return result;
+import http from 'http'
+import queryString from 'querystring'
+
+const server = http.createServer()
+const db = new Database();
+
+server.on('request', (req, res) => {
+  setHeader(req, res);
+  res.writeHead(200);
+
+  if(req.method == 'OPTIONS') {
+    completed(res);
+  } else if (req.method == 'GET') {
+    getDanmaku(res);
+  } else if (req.method == 'POST') {
+    let reqBody = '';
+    req.on("data", (data) => {
+      reqBody = reqBody + data;
+    });
+    req.on('end', () => {  
+      addDanmaku(queryString.parse(reqBody), res);
+    });
+  }
+});
+
+function completed(res) {
+  res.end();
 }
 
-console.log(encrypt('zsimline@163.com', '201911061427'));
+function setHeader(req, res) {
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('Access-Control-Allow-Origin', req.headers['origin']);
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+}
+
+function getDanmaku(res) {
+  db.excute('SELECT * FROM auth_user').then((results) => {
+    res.write(JSON.stringify(results[0]));
+    completed(res);
+  });
+}
+
+function addDanmaku(data, res) {
+  const danmakuData = JSON.parse(Object.keys(data)[0])
+  res.write(JSON.stringify({"code":0}));
+  completed(res);
+}
+
+server.listen(1722, () => {
+  console.log('NodeJS 在 1722 端口监听');
+})

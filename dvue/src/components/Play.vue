@@ -30,7 +30,7 @@ export default {
       },
       danmaku: {
         id: '10101470022',
-        api: 'https://dplayer.moerats.com/',
+        api: 'http://danmaku.zizaixian.top/',
         token: 'tokendemo',
         maximum: 1000,
         user: 'DIYgod',
