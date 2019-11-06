@@ -29,26 +29,17 @@ export default {
         url: 'https://vip.okokbo.com/20171214/EyioIJsB/index.m3u8',
       },
       danmaku: {
-        id: '9E2E3368B56CDBB4',
-        api: 'https://api.prprpr.me/dplayer/',
+        id: '10101470022',
+        api: 'https://dplayer.moerats.com/',
         token: 'tokendemo',
         maximum: 1000,
-        addition: ['https://api.bilibili.com/x/v1/dm/list.so?oid=125743280'],
         user: 'DIYgod',
         bottom: '15%',
-        unlimited: true,
+        unlimited: false,
       },
-      contextmenu: [
-        {
-            text: '内嵌视频地址',
-            click: (player) => {
-                console.log(player);
-            },
-        },
-      ],
     };
     this.dp = new DPlayer(options);
-
+    window.dp = this.dp;
   },
 
   components: {

@@ -22,10 +22,6 @@ import VideoShow from '@/components/VideoShow';
 export default {
   props: ['vid'],
 
-  mounted: function() {
-    console.log(this.vid);
-  },
-
   data: function() {
     return {
       movieItems: [
