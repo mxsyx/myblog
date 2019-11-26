@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>梦醒时夜续</title>
+  <icon>http://mxsyx.site/icon.png</icon>
+  <subtitle>write code and love life</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://mxsyx.site/"/>
+  <updated>2019-11-26T08:24:23.622Z</updated>
+  <id>http://mxsyx.site/</id>
+  
+  <author>
+    <name>梦醒时夜续</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>测试</title>
+    <link href="http://mxsyx.site/archives/1/"/>
+    <id>http://mxsyx.site/archives/1/</id>
+    <published>2019-11-25T07:50:29.000Z</published>
+    <updated>2019-11-26T08:24:23.622Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;　　C++11 引入了对多线程语言级别的支持，&lt;thread&gt; 库是C++的标准线程库，它定义了与编写多线程程序相关的类。 相比于传统的POSIX线程标准，&lt;thread&gt; 库更符合C++的编程风格。&lt;/thread&gt;&lt;/thread&gt;&lt;/p&gt;
+&lt;p&gt;　　&lt;thread&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="基础知识" scheme="http://mxsyx.site/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+    
+    
+      <category term="测试" scheme="http://mxsyx.site/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+</feed>
