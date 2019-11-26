@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://mxsyx.site/"/>
-  <updated>2019-11-26T14:47:41.742Z</updated>
+  <updated>2019-11-26T14:59:53.130Z</updated>
   <id>http://mxsyx.site/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试</title>
+    <title>C++ 标准线程库</title>
     <link href="http://mxsyx.site/archives/1/"/>
     <id>http://mxsyx.site/archives/1/</id>
     <published>2019-11-25T07:50:29.000Z</published>
-    <updated>2019-11-26T14:47:41.742Z</updated>
+    <updated>2019-11-26T14:59:53.130Z</updated>
     
     <summary type="html">
     
@@ -37,10 +37,10 @@
     </summary>
     
     
-      <category term="基础知识" scheme="http://mxsyx.site/categories/%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/"/>
+      <category term="编程语言" scheme="http://mxsyx.site/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="测试" scheme="http://mxsyx.site/tags/%E6%B5%8B%E8%AF%95/"/>
+      <category term="C++" scheme="http://mxsyx.site/tags/C/"/>
     
   </entry>
   
