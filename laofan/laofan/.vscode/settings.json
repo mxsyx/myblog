@@ -1,6 +1,0 @@
-{
-    "python.pythonPath": "/opt/Anaconda/bin/python3.6",
-    "python.linting.pylintArgs": [
-        "--disable=W,C,E"
-    ],
-}
