@@ -68,8 +68,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /assets/images/favicon-16x16.png  
-  medium: /assets/images/favicon-32x32.png
+  small: /assets/images/favicon-16x16.ico 
+  medium: /assets/images/favicon-32x32.ico
   # ! -----------------------------------------------------
   # ! If you don't understand, please ignore the following.
   # ! -----------------------------------------------------
@@ -379,19 +379,19 @@ reward:
 # Gittalk
 # See: https://github.com/gitalk/gitalk/
 gitalk:
-  enable: false
+  enable: true
   # Github username.
-  owner:
+  owner: zsimline
   # Github repository.
-  repo:
+  repo: mxsyx-public
   # Github Application Client ID.
-  client_id:
+  client_id: 7905b097596c6d53b6b4
   # Github Application Client Secret.
-  client_secret:
+  client_secret: f8a01aa6ecb52634d2361efcdbab37f4006e0981
   # GitHub repo owner and collaborators, only these guys can initialize github issues.
-  admin:
+  admin: zsimline
   # Facebook-like distraction free mode.
-  distraction_free_mode: false
+  distraction_free_mode: true
   # Gitalk's display language depends on user's browser or system environment.
   # If you want everyone visiting your site to see a uniform language,
   #   you can set a force language value.
@@ -619,9 +619,9 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: false
+  enable: true
   # Scrolling to the second screen when the page loaded.
-  scrollTo2screen: false
+  scrollTo2screen: true
   # ! -----------------------------------------------------
   # ! If you don't understand, please ignore the following.
   # ! -----------------------------------------------------
