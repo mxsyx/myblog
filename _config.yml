@@ -4,7 +4,7 @@
 
 # Site
 title: 梦醒时夜续
-subtitle: 'write code and love life'
+subtitle: while there is life there is hope
 description: ''
 keywords:
 author: 梦醒时夜续
@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://mxsyx.site
+url: https://mxsyx.site
 root: /
 permalink: archives/:title/
 permalink_defaults:
@@ -28,8 +28,6 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
-  - "plugins/**"
 
 # Writing
 new_post_name: :title.md # File name of new posts
