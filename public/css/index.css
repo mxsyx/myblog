@@ -2219,3 +2219,15 @@ a.fancybox {
 .highlight .line::before {
   background-color: #282c34;
 }
+.table-container {
+  line-height: 28px;
+}
+.table-container table th {
+  padding: 6px 13px;
+}
+.table-container table td {
+  padding: 6px 13px;
+}
+.table-container table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}

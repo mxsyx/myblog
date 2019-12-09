@@ -369,8 +369,8 @@ heading_line: true
 reward:
   enable: true
   # Fill in your QR Code for collecting money.
-  alipay: https://sweetea.site/wp-content/uploads/2019/09/zfbqrcode.jpg
-  wechat: https://sweetea.site/wp-content/uploads/2019/09/wechatqrcode.jpg
+  alipay: /assets/images/paycode/alipay.jpg
+  wechat: /assets/images/paycode/wxpay.png
 
 # ---------------------------------------------------------------
 # Comment config

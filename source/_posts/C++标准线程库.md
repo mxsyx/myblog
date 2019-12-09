@@ -1,10 +1,10 @@
 ---
 title: C++ 标准线程库
 date: 2019-11-25 15:50:29
-tags: C++
-reward: true
 permalink: 1
 categories: 编程语言
+tags: C++
+reward: true
 ---
 
 　　C++11 引入了对多线程语言级别的支持，<thread> 库是C++的标准线程库，它定义了与编写多线程程序相关的类。 相比于传统的POSIX线程标准，<thread> 库更符合C++的编程风格。

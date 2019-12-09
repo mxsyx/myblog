@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mxsyx.site/"/>
-  <updated>2019-12-08T15:06:59.710Z</updated>
+  <updated>2019-12-09T14:56:23.547Z</updated>
   <id>https://mxsyx.site/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>bdtrans-一个命令行下的翻译工具</title>
+    <link href="https://mxsyx.site/archives/6/"/>
+    <id>https://mxsyx.site/archives/6/</id>
+    <published>2019-12-09T14:55:45.000Z</published>
+    <updated>2019-12-09T14:56:23.547Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;　　现如今，机器翻译技术已经越来越成熟了，尽管从整体来看机器翻译的结果还不是特别如意，但是也足以应付一般的翻译需求了。近几年机器翻译平台层出不穷，国外比较出名的翻译平台有Google翻译、必应翻译等，国内比较出名的也有百度翻译、有道翻译等。&lt;/p&gt;
+&lt;p&gt;　　中国的百度公司
+        
+      
+    
+    </summary>
+    
+    
+      <category term="工具使用" scheme="https://mxsyx.site/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+    
+      <category term="工具使用" scheme="https://mxsyx.site/tags/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+    
+  </entry>
+  
+  <entry>
     <title>flex布局中flex-grow与flex-shrink的计算方式</title>
-    <link href="https://mxsyx.site/archives/flex%E5%B8%83%E5%B1%80%E4%B8%ADflex-grow%E4%B8%8Eflex-shrink%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F/"/>
-    <id>https://mxsyx.site/archives/flex%E5%B8%83%E5%B1%80%E4%B8%ADflex-grow%E4%B8%8Eflex-shrink%E7%9A%84%E8%AE%A1%E7%AE%97%E6%96%B9%E5%BC%8F/</id>
+    <link href="https://mxsyx.site/archives/4/"/>
+    <id>https://mxsyx.site/archives/4/</id>
     <published>2019-12-08T13:57:10.000Z</published>
-    <updated>2019-12-08T15:06:59.710Z</updated>
+    <updated>2019-12-09T14:54:23.903Z</updated>
     
     <summary type="html">
     
@@ -37,6 +65,12 @@
     </summary>
     
     
+      <category term="前端" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+      <category term="CSS" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
+    
+    
+      <category term="CSS" scheme="https://mxsyx.site/tags/CSS/"/>
     
   </entry>
   
@@ -45,7 +79,7 @@
     <link href="https://mxsyx.site/archives/3/"/>
     <id>https://mxsyx.site/archives/3/</id>
     <published>2019-12-05T15:08:41.000Z</published>
-    <updated>2019-12-05T15:22:08.744Z</updated>
+    <updated>2019-12-09T15:17:50.211Z</updated>
     
     <summary type="html">
     
@@ -72,7 +106,7 @@
     <link href="https://mxsyx.site/archives/2/"/>
     <id>https://mxsyx.site/archives/2/</id>
     <published>2019-12-02T15:09:23.000Z</published>
-    <updated>2019-12-05T15:22:09.588Z</updated>
+    <updated>2019-12-09T14:51:46.891Z</updated>
     
     <summary type="html">
     
@@ -100,7 +134,7 @@
     <link href="https://mxsyx.site/archives/1/"/>
     <id>https://mxsyx.site/archives/1/</id>
     <published>2019-11-25T07:50:29.000Z</published>
-    <updated>2019-11-26T14:59:53.130Z</updated>
+    <updated>2019-12-09T14:51:22.371Z</updated>
     
     <summary type="html">
     

@@ -1,7 +1,10 @@
 ---
 title: flex布局中flex-grow与flex-shrink的计算方式
 date: 2019-12-08 21:57:10
-tags:
+permalink: 4
+tags: CSS
+categories: [前端, CSS]
+reward: true
 ---
 
 　　CSS 中的 Flex(弹性布局) 可以很灵活的控制网页的布局，其中决定 Flex 布局内项目宽度/高度的是三个属性：
