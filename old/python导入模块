@@ -1,0 +1,209 @@
+　　模块与包的导入机制使得Python的模块化编程十分方便，也许你已经习惯了类似 `import　sys `　`from time import localtime` 这样的导入语句，但是你是否了解这其中的相关细节呢？本文就与大家一起探讨一下Python模块导入的细节问题。
+  
+### 一、导入模块时发生了什么？
+　　假设我们现在要导入一个名为 example 的模块，当我们使用 ` import example` 语句时，Python解释器首先根据预先配置的查找路径寻找名为 example 的模块，我们可以通过如下方式获取这些查找路径：
+  
+```python
+import sys
+
+print('\n'.join(sys.path))
+"""在我的计算机上，上面的程序输出：
+/home/deer/desktop/test
+/opt/Anaconda/lib/python3.6
+/opt/Anaconda/lib/python3.6/site-packages
+"""
+```
+若解释器在这些路径下找不到名为 example 的模块，将抛出 <span style="color:red">ModuleNotFoundError</span> 异常。
+
+如果你将Python模块存储在一个自定义的文件夹内，你应该向查找路径中添加这个文件夹的路径，从而让解释器找到它：
+```python
+import sys
+
+print('\n'.join(sys.path))
+"""
+输出：
+/home/deer/desktop/test
+/opt/Anaconda/lib/python3.6
+/opt/Anaconda/lib/python3.6/site-packages
+"""
+
+sys.path.append('/home/deer/desktop/test2')
+
+print('\n'.join(sys.path))
+"""
+输出：
+/home/deer/desktop/test
+/opt/Anaconda/lib/python3.6
+/opt/Anaconda/lib/python3.6/site-packages
+/home/deer/desktop/test2
+"""
+```
+
+当前我的工作目录为 /home/deer/desktop/test
+
+我们在工作目录下定义一个名为example的模块，模块的内容如下：
+```python
+number1 = 9012
+number2 = 2019
+
+class Operation(object):
+    def __init__(self):
+        pass
+
+    def add(self, a, b):
+        return a + b
+    
+    def sub(self, a, b):
+        return a - b
+
+
+def display():
+    operate = Operation()
+    result = operate.add(number1, number2)
+    print('number1 + number2 = %d' % result)
+```
+
+现在我们在Python解释器的交互式环境下导入example这个模块： `import example`
+
+由于解释器的查找路径包含我的工作目录，所以解释器将找到这个模块并尝试导入它。（注意：一旦python找到某个模块后，便停止查找了，所以即便在其它路径下存在同名的模块也不会被导入）。
+
+导入 example 模块时，python将彻底的执行一遍这个模块，python首先检查该模块是否依赖于其它模块，若依赖于其它模块则导入这些模块，同时初始化模块内的全局常量/变量，完成函数与类的定义，并将这些常量、变量、函数定义、类定义等存放进一个 “内存空间” 中。
+
+*【注】其实没有“内存空间”这个概念，只不过为了方便大家理解，我们权且构造这么一个概念；我们可以将“内存空间”想想成计算机物理内存中的一块区域，里面存储着模块内已经初始化的常量、变量、函数定义、类定义等；每个导入的模块都有自己独立的“内存空间中”，各个“内存空间”互不干扰。*
+
+接下来我们在工作目录下再定义一个名为 transfer 的模块，模块内容如下：
+
+```python
+import example
+
+number = 142
+example.diaplay()
+```
+执行这个模块，程序将输出：number1 + number2 = 11031，这是十分容易看懂的；
+
+在 transfer 模块中，”example” 就是一个普通的符号，只不过与”number”这个符号不同的是，number引用的是一个数字，而example引用的是刚刚提到的内存空间。
+
+![](https://blog.zizaixian.top/wp-content/uploads/2019/08/text4552.png)
+
+由于 transfer 模块中的 example 就是一个普通的符号，所有我们对其进行赋值操作自然也是没有问题的，下面的例子中example被重新引导到了一个数字，再次调用display函数时将抛出异常。
+
+```python
+import example
+
+example = 15
+print(example) # 输出15
+
+number = 142
+example.diaplay()
+"""
+输出：
+Traceback (most recent call last):
+  File "transfer.py", line 8, in 
+    example.diaplay()
+AttributeError: 'int' object has no attribute 'diaplay'
+"""
+```
+
+　　早些时候我对这种导入机制有一个错误的理解：当执行类似于  `from example import display` 这样的语句时，我想当然的认为解释器仅仅初始化了 display 函数，模块中的其它变量/函数等并没有初始化，只有执行类似于  `import example` 这样的语句时才初始化了模块内的全部内容，只是后来转念一想，如果解释器仅初始化了display函数，那函数中用到的 Operation 类和 number1 与 number2 这两个变量又从何而来呢？所以无论哪种导入方式，python都将会从上至下的执行一遍模块，初始化模块内全部的内容。
+
+### 二、修改已导入模块中的内容
+
+先说一个知识点：如果我们在某次任务中多次导入某个模块，Python最终只会执行第一次导入。
+
+在某些特殊情况下，我们会修改已导入模块中的内容，例如，修改已导入模块中的一个变量的值：
+
+```python
+import example
+
+example.number1 = 1
+example.diaplay()  # 输出 number1 + number2 = 2020
+```
+
+　　试想这样一种情况，我们在导入 example 模块后又导入了另外一个模块，而这个模块也导入了example模块，由于Python只执行第一次导入，所以整个任务期间内只存在一个唯一的 example 内存空间。如果这个模块修改了 example 模块中的值，将影响到其它模块，在这种情况下将产生一些难以察觉的错误。
+
+现在我们在工作目录下新建一个名为 update 的模块，模块内容如下：
+
+```python
+import example
+
+example.number1 = 1
+```
+修改 transfer 模块，修改后的内容如下：
+
+```python
+import example
+import update
+
+example.diaplay()  # 输出 number1 + number2 = 2020
+```
+
+　　可以看到，原本我们是想得到 9012 与 2019 的和，但是 update 模块修改了 example 模块中变量 number1 的值，最终我们得到的是 1 与 2019 的和。当然，这个例子是极其简单的，一眼便能看出错误来，但是当各个模块中的内容非常多的时候，我们不能够很容易的看出这种错误，调试起来也相对麻烦一些。
+
+![](https://blog.zizaixian.top/wp-content/uploads/2019/08/path1343.png)
+
+　　所以在平时编写python程序的过程中，尽量不要修改已导入模块中的内容，如果非要这么做，可以考虑调整一下代码的位置或者用注释明确的标注出来修改了内容。
+
+### 三、循环导入
+
+有时我们会遇到这样一个情况：模块内没有任何语法错误，但是无法导入这个模块，例如：
+
+修改 example 模块与 transfer 模块，修改后的内容如下：
+
+```python
+# example.py
+import transfer
+
+class Operation(object):
+    def __init__(self):
+        pass
+
+    def add(self, a, b):
+        return a + b
+    
+    def sub(self, a, b):
+        return a - b
+	
+def diaplay():
+    operate = Operation()
+    result = operate.add(transfer.number1, 
+                         transfer.number2)
+    print('number1 + number2 = %d' % result)
+```
+
+```python
+# transfer.py
+import example
+
+number1 = 9012
+number2 = 2019
+
+example.diaplay()
+```
+
+example 模块用到了定义在 transfer 模块中的 number1 与 number2 两个变量，而 transfer 模块又调用了定义在 example 模块中的函数，这就形成了一个循环导入，即A模块导入了B，而B模块又导入了A.
+
+![](https://blog.zizaixian.top/wp-content/uploads/2019/08/text2925-3.png)
+
+当我们尝试执行 transfer模块时，Python将抛出错误：
+
+```python
+"""
+Traceback (most recent call last):
+  File "transfer.py", line 1, in 
+    import example
+  File "/home/mxsyx/desktop/test/example.py", line 1, in 
+    import transfer
+  File "/home/mxsyx/desktop/test/transfer.py", line 6, in 
+    example.diaplay()
+AttributeError: module 'example' has no attribute 'diaplay'
+"""
+```
+　　transfer 模块尝试导入 example 模块，example 模块又尝试导入 tranfer 模块，互不相让，结果就是谁也导入不了谁，最终将会抛出一些奇奇怪的错误，使程序无法正常执行，所以日常编写程序时应尽量避免循环导入
+
+　　如果你不慎碰上这样的情况，就应该考虑重构一下代码了。
+
+### 四、总结
+
+好吧，没什么好总结的，毕竟这很简单不是？
+
+![](https://blog.zizaixian.top/wp-content/uploads/2019/08/small46a77e637238b439e445a8e11279eb281563792905.jpg)
