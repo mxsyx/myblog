@@ -619,7 +619,7 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: true
+  enable: false
   # Scrolling to the second screen when the page loaded.
   scrollTo2screen: true
   # ! -----------------------------------------------------

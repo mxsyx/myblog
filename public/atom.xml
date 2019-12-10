@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mxsyx.site/"/>
-  <updated>2019-12-10T13:40:53.784Z</updated>
+  <updated>2019-12-10T15:29:13.488Z</updated>
   <id>https://mxsyx.site/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue自适应高度的输入框</title>
+    <link href="https://mxsyx.site/archives/10/"/>
+    <id>https://mxsyx.site/archives/10/</id>
+    <published>2019-12-10T14:15:19.000Z</published>
+    <updated>2019-12-10T15:29:13.488Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;　　有时候我们需要一个高度能随内容自动增加的输入框，&lt;code&gt;input&lt;/code&gt; 显然不行，因为 &lt;code&gt;input&lt;/code&gt; 里的文字是不换行的。文本域 &lt;code&gt;textarea&lt;/code&gt;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="VueJS" scheme="https://mxsyx.site/categories/VueJS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>拉勾网企业招聘信息分析报告</title>
