@@ -3,7 +3,7 @@ title: bdtrans-一个命令行下的翻译工具
 reward: true
 date: 2019-12-09 22:55:45
 tags: 工具使用
-permalink: 6
+permalink: 5
 categories: 工具使用
 ---
 
