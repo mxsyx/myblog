@@ -19,3 +19,4 @@ tags:
 
 　　这种方式依然使用 `textarea`, 主要思想是我们将 `textarea` 放入一个容器中，同时在这个容器中放入一个隐藏的 div (visibility: hidden), 监听 `textarea` 的输入事件并将其中的文字动态的同步到隐藏的div中，这样div 就可以撑开容器，这时设置 `textarea` 的高度为 100% 并将其定位到容器的左上角，那么 `textarea` 的高度自然就是其中文字内容的高度了。
 
+　　其中
