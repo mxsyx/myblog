@@ -182,7 +182,7 @@
     <link href="https://mxsyx.site/archives/4/"/>
     <id>https://mxsyx.site/archives/4/</id>
     <published>2019-12-08T13:57:10.000Z</published>
-    <updated>2019-12-09T14:54:23.903Z</updated>
+    <updated>2019-12-13T15:28:23.736Z</updated>
     
     <summary type="html">
     
@@ -190,8 +190,7 @@
       
         
         
-          &lt;p&gt;　　CSS 中的 Flex(弹性布局) 可以很灵活的控制网页的布局，其中决定 Flex 布局内项目宽度/高度的是三个属性：&lt;br&gt;flex-basis, flex-grow, flex-shrink. &lt;/p&gt;
-&lt;p&gt;　　flex-basis
+          &lt;p&gt;　　CSS 中的 &lt;code&gt;Flex(弹性布局)&lt;/code&gt; 可以很灵活的控制网页的布局，其中决定 &lt;code&gt;Flex&lt;/code&gt; 布局内项目宽度/高度的是三个属性：&lt;br&gt;&lt;code&gt;flex-basis&lt;/code&gt;,
         
       
     
