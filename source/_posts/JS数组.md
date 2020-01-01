@@ -74,5 +74,45 @@ const arr = Array.of(1);
 console.log(arr);  // [1]
 ```
 
-### 数组的属性
-　　数组只有一个 `length` 属性，表示数组中
+### 数组实例的属性
+　　数组实例只有一个 `length` 属性，表示数组中元素的个数。
+
+### 数组实例的方法
+　　数组作为一种极为常用的数据结构，有很多的方法，下面介绍的都是定义在数组原型上的方法。
+
+#### 插入/删除类操作
+
+**Array.prototype.push(element1, ..., elementN)** *向数组末尾添加一个或者多个元素，返回数组新的长度*
+
+```javascript
+const arr = [1,2,3];
+const arr2 = [7,8,9];
+const len = arr.push(4, 5, 6, arr2);
+console.log(arr);
+console.log(len);
+
+// [ 1, 2, 3, 4, 5, 6, [ 7, 8, 9 ] ]
+// 7
+```
+从上面我们可以看到，`arr2` 是作为一个整体被添加到 `arr` 的末尾，有时候我们希望 `arr2` 合并到 `arr` 中，那么如何使用 `push` 方法实现数组的合并呢？答案是使用函数原型上的 `apply` 方法。
+
+```javascript
+const arr = [1,2,3];
+const arr2 = [7,8,9];
+arr.push.apply(arr,arr2);
+console.log(arr);
+
+// [ 1, 2, 3, 7, 8, 9 ]
+```
+`apply` 法将 `arr2` 中的每一个元素作为参数参数传递给 `push` 方法，相当于 `arr.push(4,5,6)`, 关于 `apply` 的更多解释请参考 [Function.prototype.apply()](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Function/apply)
+
+**Array.prototype.pop()** *删除数组的最后一个元素，返回该元素的值，当数组为空时返回undefined*
+
+```javascript
+const arr = ['a','b']
+console.log(arr.pop());  // b
+console.log(arr.pop());  // a
+console.log(arr.pop());  // undefined
+```
+
+
