@@ -75,14 +75,12 @@ console.log(arr);  // [1]
 ```
 
 ### 数组实例的属性
+
 　　数组实例只有一个 `length` 属性，表示数组中元素的个数。
 
-### 数组实例的方法
-　　数组作为一种极为常用的数据结构，有很多的方法，下面介绍的都是定义在数组原型上的方法。
+### 插入/删除类方法
 
-#### 插入/删除类操作
-
-　　插入/删除类操作将会改变原数组。
+　　数组实例中的插入/删除类方法将会改变原数组。
 
 **Array.prototype.push(element1, ..., elementN)** *向数组末尾添加一个或者多个元素，返回数组新的长度*
 
@@ -223,4 +221,59 @@ console.log([1,2,3,4,5].copyWithin(3, 1, 4));
 // [ 1, 2, 3, 2, 3 ]
 ```
 
+**Array.prototype.sort([compareFunction])** *对数组内的元素进行排序*
 
+　　参数 `compareFunction` 是用来指定按某种顺序进行排列的函数，它接收两个用于比较的元素，返回比较结果。假设 a 和 b 是两个将要被比较的元素：如果 compareFunction(a, b) 小于 0 ，那么 a 会被排列到 b 之前；如果 compareFunction(a, b) 等于 0，a 和 b 的相对位置不变；如果 compareFunction(a, b) 大于 0 ， b 会被排列到 a 之前。
+
+```javascript
+function compare(a, b) {
+  if (a < b ) {
+    return -1;
+  }
+  if (a > b ) {
+    return 1;
+  }
+  return 0;
+}
+
+const arr = [25, 15, 5, 11, 8]
+arr.sort(compare)
+console.log(arr);  // [ 5, 8, 11, 15, 25 ]
+```
+或者更加简单的写法:
+```javascript
+const arr = [25, 15, 5, 11, 8]
+arr.sort((a, b) => a == b ? 0 : ( a > b ? 1 : -1));
+// 当简单的比较数字时也可以写为: arr.sort((a, b) => a - b);
+console.log(arr);  // [ 5, 8, 11, 15, 25 ]
+```
+按对象的某个值进行排序:
+```javascript
+const arr = [
+  { name: 'john', value: 20 },
+  { name: 'tom',  value: 14 },
+  { name: 'may',  value: 25 },
+  { name: 'abby', value: 12 },
+  { name: 'amy',  value: 16 },
+]
+arr.sort((a, b) => a.value == b.value ? 0 : ( a.value > b.value ? 1 : -1));
+console.log(arr);
+/*
+[
+  { name: 'abby', value: 12 },
+  { name: 'tom',  value: 14 },
+  { name: 'amy',  value: 16 },
+  { name: 'john', value: 20 },
+  { name: 'may',  value: 25 }
+]
+*/
+```
+当我们没有提供 `compareFunction` 参数时，`sort` 方法会将数组内的元素转换为字符串按**字典序**进行比较。
+```javascript
+const arr = [25, 15, 5, 11, 8]
+// arr 转化为字符串 ['25', '15', '5', '11', '8']
+arr.sort();
+console.log(arr);  // [ 11, 15, 25, 5, 8 ]
+```
+
+　　以上就是数组中的插入/删除类方法，接下来将介绍数组中的访问方法，请点击 [链接](http://127.0.0.1:4000/archives/14/) 继续阅读。
