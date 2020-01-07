@@ -36,17 +36,11 @@
     <link href="https://mxsyx.site/archives/13/"/>
     <id>https://mxsyx.site/archives/13/</id>
     <published>2019-12-30T02:43:51.000Z</published>
-    <updated>2020-01-02T06:03:01.884Z</updated>
+    <updated>2020-01-07T07:24:48.873Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　数组是 JavaScript
-        
-      
+      &lt;p&gt;　　数组是 JavaScript 中最为常用的数据类型之一，一个数组中可以存储多个相同类型或不同类型的元素，元素的类型可以是基本类型也可以是数组类型，本文就JS数组的属性与方法做一个简单的介绍，争取用丰富的例子让读者明晰数组中常用函数的用法，同时尝试实现一些数组的方法。&lt;/p&gt;
     
     </summary>
     
@@ -78,18 +72,13 @@
     <link href="https://mxsyx.site/archives/12/"/>
     <id>https://mxsyx.site/archives/12/</id>
     <published>2019-12-26T14:15:39.000Z</published>
-    <updated>2020-01-03T18:15:35.789Z</updated>
+    <updated>2020-01-07T07:45:44.973Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　严格意义上讲，我不能算是一个毕业生，因为距离我真正拿到毕业证还有半年的时间，当然最主要的原因是我感觉自己好像从来没有上过大学，就像某些段子里讲的那样我可能上了一个假的大学。&lt;/p&gt;
-&lt;p&gt;　　三年前，我来到了目前就读的大学，虽然这是一所普通到不能再普通的大学，但是不知为
-        
-      
+      &lt;p&gt;　　严格意义上讲，我不能算是一个毕业生，因为距离我真正拿到毕业证还有半年的时间，当然最主要的原因是我感觉自己好像从来没有上过大学，就像某些段子里讲的那样我可能上了一个假的大学。&lt;/p&gt;
+&lt;p&gt;　　三年前，我来到了目前就读的大学，虽然这是一所普通到不能再普通的大学，但是不知为何我并没有因此感到一丝沮丧。周围的人，特别是我的父母都说我上了一所野鸡大学，我不想反驳，因为的确没有反驳的理由。家里的人通常会说你上的大学“不好”，人家的孩子上的大学是“好大学“，但是你若问他们”好的大学“与”不好的大学“之间的区别在哪里，他们却又答不上来，毕竟对你指指点点的那帮人从来也没上过大学。&lt;/p&gt;
+&lt;p&gt;　　我花了两天时间将这几年大学生活的感悟写了出来，算是一篇&lt;strong&gt;长篇日记&lt;/strong&gt;，同时分享给感兴趣的的人。此文较长，一万字左右，阅读需要花费半个小时。&lt;/p&gt;
     
     </summary>
     
@@ -102,17 +91,15 @@
     <link href="https://mxsyx.site/archives/10/"/>
     <id>https://mxsyx.site/archives/10/</id>
     <published>2019-12-10T14:15:19.000Z</published>
-    <updated>2019-12-13T08:01:26.309Z</updated>
+    <updated>2020-01-07T07:46:20.973Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　有时候我们需要一个高度能随内容自动增加的输入框，&lt;code&gt;input&lt;/code&gt; 显然不行，因为 &lt;code&gt;input&lt;/code&gt; 里的文字是不换行的。文本域 &lt;code&gt;textarea&lt;/code&gt;
-        
-      
+      &lt;p&gt;　　有时候我们需要一个高度能随内容自动增加的输入框，&lt;code&gt;input&lt;/code&gt; 显然不行，因为 &lt;code&gt;input&lt;/code&gt; 里的文字是不换行的。文本域 &lt;code&gt;textarea&lt;/code&gt; 里的文字倒是换行的，可一旦文字内容超过其高度，&lt;code&gt;textarea&lt;/code&gt; 就会增加一个烦人的滚动条，这是很影响视觉的，就如同下面：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;cols&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;30&quot;&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;rows&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;3&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;textarea&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;textarea cols=&quot;30&quot; rows=&quot;3&quot;&gt;&lt;/textarea&gt;&lt;/p&gt;
+&lt;p&gt;　　那么有没有办法制作一个高度能随文字内容自动增加的输入框呢？答案是肯定的，下面介绍两种方式。&lt;/p&gt;
     
     </summary>
     
@@ -127,17 +114,11 @@
     <link href="https://mxsyx.site/archives/9/"/>
     <id>https://mxsyx.site/archives/9/</id>
     <published>2019-12-10T13:40:03.000Z</published>
-    <updated>2019-12-10T13:40:53.784Z</updated>
+    <updated>2020-01-07T07:47:13.161Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　2020年是16级大学生毕业的年份，明年的五六月份，包括笔者在内的一大批大学生就要走出校门，结束十六年的学业生涯，并开始长达数十年的职业生涯，在这个时间点上，我们最期望的莫过于找到一份称心的工作，这是家人的期盼，更是我们自己的期盼。&lt;br&gt;　　我们中的每一个人，都或多或
-        
-      
+      &lt;p&gt;　　2020年是16级大学生毕业的年份，明年的五六月份，包括笔者在内的一大批大学生就要走出校门，结束十六年的学业生涯，并开始长达数十年的职业生涯，在这个时间点上，我们最期望的莫过于找到一份称心的工作，这是家人的期盼，更是我们自己的期盼。&lt;br&gt;　　我们中的每一个人，都或多或少的感受到了就业的压力，尤其是计算机行业，在这种&lt;strong&gt;低端人才饱和，高端人才紧缺&lt;/strong&gt;的大环境下，找到一份称心的工作着实不是件容易的事情。刚走出校门的我们由于经验不足只能选择低端岗位，令人担忧的是全球智能化革命的兴起将消灭大量的低端岗位，所以未来的竞争只会越来越激烈。&lt;br&gt;　　前段时间，一个偶然的机会我在互联网上浏览到了几则招聘信息，读着读着我脑子中便闪过一个念头，何不动用一些技术手段将这些招聘信息采集下来，然后对这些信息进行分析呢？这样就可以从整体上看清行业招聘的趋势了。在强大的好奇心的驱使下我设计并编写了计算机程序，程序运行了大概三天的时间，终于将这些招聘信息采集了下来，数据经过清洗与分析过后，利用数据可视化技术加以展现。现在我将分析结果分享出来，以下是文章正文部分。&lt;/p&gt;
     
     </summary>
     
@@ -152,18 +133,15 @@
     <link href="https://mxsyx.site/archives/8/"/>
     <id>https://mxsyx.site/archives/8/</id>
     <published>2019-12-10T13:34:58.000Z</published>
-    <updated>2019-12-10T13:37:17.968Z</updated>
+    <updated>2020-01-07T07:47:45.953Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;blockquote&gt;
-&lt;p&gt;该文章最初于2017年11月08日发布在&lt;span class=&quot;external-link&quot;&gt;&lt;a href=&quot;https://www.cnblogs.com/nkqlhqc/p/7805837.html&quot; target=&quot;_blank&quot;
-        
-      
+      &lt;blockquote&gt;
+&lt;p&gt;该文章最初于2017年11月08日发布在&lt;a href=&quot;https://www.cnblogs.com/nkqlhqc/p/7805837.html&quot;&gt;博客园&lt;/a&gt;&lt;br&gt;当初我还在上大一，掌握的计算机知识非常少，只是为了好玩，实现了自己的某个小想法。如今两年过去了，这篇文章已经有三万多人次的阅读量，我也很欣慰。现将该篇文章同步到我的个人博客中，以勉励自己，时刻保持一个好奇心。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;相信很多高校学生都有用WEB认证方式接入校园网的经历。&lt;/p&gt;
+&lt;p&gt;　　拿我所在的大学为例，我们大学的校园网由联通公司承建，当我连上寝室的无线路由器后，浏览器会自动弹出一个由卓智公司开发的认证界面，如下图：&lt;/p&gt;
     
     </summary>
     
@@ -180,18 +158,12 @@
     <link href="https://mxsyx.site/archives/6/"/>
     <id>https://mxsyx.site/archives/6/</id>
     <published>2019-12-10T13:27:49.000Z</published>
-    <updated>2019-12-10T13:33:39.544Z</updated>
+    <updated>2020-01-07T07:48:16.189Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　我想写些东西已经很久了，以前不会写，不知该从何处下笔。不知道现在会不会写，但凡事都可以去试一试，于是我写下了这篇文章。&lt;/p&gt;
-&lt;p&gt;　　十多年前，在我上小学的时候，那时的我还有一双明亮的眼睛，能清楚的看见天上数不清的星星。现在呢，患了近视的我再也无法看清那些星星了，也
-        
-      
+      &lt;p&gt;　　我想写些东西已经很久了，以前不会写，不知该从何处下笔。不知道现在会不会写，但凡事都可以去试一试，于是我写下了这篇文章。&lt;/p&gt;
+&lt;p&gt;　　十多年前，在我上小学的时候，那时的我还有一双明亮的眼睛，能清楚的看见天上数不清的星星。现在呢，患了近视的我再也无法看清那些星星了，也许真的是身体上的原因，又或许是有什么不干净的东西模糊了我的眼睛。&lt;/p&gt;
     
     </summary>
     
@@ -235,18 +207,12 @@
     <link href="https://mxsyx.site/archives/5/"/>
     <id>https://mxsyx.site/archives/5/</id>
     <published>2019-12-09T14:55:45.000Z</published>
-    <updated>2019-12-10T13:29:41.636Z</updated>
+    <updated>2020-01-07T07:48:42.753Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　现如今，机器翻译技术已经越来越成熟了，尽管从整体来看机器翻译的结果还不是特别如意，但是也足以应付一般的翻译需求了。近几年机器翻译平台层出不穷，国外比较出名的翻译平台有Google翻译、必应翻译等，国内比较出名的也有百度翻译、有道翻译等。&lt;/p&gt;
-&lt;p&gt;　　中国的百度公司
-        
-      
+      &lt;p&gt;　　现如今，机器翻译技术已经越来越成熟了，尽管从整体来看机器翻译的结果还不是特别如意，但是也足以应付一般的翻译需求了。近几年机器翻译平台层出不穷，国外比较出名的翻译平台有Google翻译、必应翻译等，国内比较出名的也有百度翻译、有道翻译等。&lt;/p&gt;
+&lt;p&gt;　　中国的百度公司在人工智能层面做的还算是蛮不错的（虽然它的搜索一直以来为人所诟病），笔者经常在Linux下做一些工作，当有翻译需求时不得不打开浏览器，进入百度翻译官网去翻译一些句子，这样显然是有些麻烦，我想如果百度翻译肯提供一个API的话就好了，这样我就能做一个在终端下调用API的小工具。&lt;/p&gt;
     
     </summary>
     
@@ -263,17 +229,11 @@
     <link href="https://mxsyx.site/archives/4/"/>
     <id>https://mxsyx.site/archives/4/</id>
     <published>2019-12-08T13:57:10.000Z</published>
-    <updated>2019-12-15T15:18:15.444Z</updated>
+    <updated>2020-01-07T07:49:09.409Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　CSS 中的 &lt;code&gt;Flex(弹性布局)&lt;/code&gt; 可以很灵活的控制网页的布局，其中决定 &lt;code&gt;Flex&lt;/code&gt; 布局内项目宽度/高度的是三个属性：&lt;br&gt;&lt;code&gt;flex-basis&lt;/code&gt;,
-        
-      
+      &lt;p&gt;　　CSS 中的 &lt;code&gt;Flex(弹性布局)&lt;/code&gt; 可以很灵活的控制网页的布局，其中决定 &lt;code&gt;Flex&lt;/code&gt; 布局内项目宽度/高度的是三个属性：&lt;br&gt;&lt;code&gt;flex-basis&lt;/code&gt;, &lt;code&gt;flex-grow&lt;/code&gt;, &lt;code&gt;flex-shrink&lt;/code&gt;. &lt;/p&gt;
     
     </summary>
     
@@ -292,17 +252,11 @@
     <link href="https://mxsyx.site/archives/3/"/>
     <id>https://mxsyx.site/archives/3/</id>
     <published>2019-12-05T15:08:41.000Z</published>
-    <updated>2019-12-10T13:32:30.728Z</updated>
+    <updated>2020-01-07T07:49:29.769Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　遍观姜文的作品，无论是如《鬼子来了》鞭辟入里的分析国民性格，还是反映“火红”年代所特有的青春期的骚动——《阳光灿烂的日子》，抑或是满篇充满政治隐喻的《太阳照常升起》，他的每部作品都与中国近现代史分不开。不论你持何种态度，不可否认对于20世纪的中国——影响最大的人物无疑是
-        
-      
+      &lt;p&gt;　　遍观姜文的作品，无论是如《鬼子来了》鞭辟入里的分析国民性格，还是反映“火红”年代所特有的青春期的骚动——《阳光灿烂的日子》，抑或是满篇充满政治隐喻的《太阳照常升起》，他的每部作品都与中国近现代史分不开。不论你持何种态度，不可否认对于20世纪的中国——影响最大的人物无疑是毛泽东了，姜文的作品显然也是绕不开毛泽东的，姜文曾多次说过他一生最崇拜以及最想演绎的角色就是毛泽东，“我演的毛泽东可能是通不过的。我觉得他可以把几万人带着迁徙，又没有补助费，像摩西出埃及一样。这种东西是精神上的，但他也很矛盾，很有悲剧性……我很幸运曾经跟他（毛）生活过一段。他是中国这几千年来能够冒出头儿来的这么三、五人中的其中一个。他跟旁边的人没法比，什么蒋介石，个儿太矬了……现在太多的恩怨，对他，会扭曲了他的精神。”&lt;/p&gt;
     
     </summary>
     
@@ -319,18 +273,12 @@
     <link href="https://mxsyx.site/archives/2/"/>
     <id>https://mxsyx.site/archives/2/</id>
     <published>2019-12-02T15:09:23.000Z</published>
-    <updated>2019-12-09T14:51:46.891Z</updated>
+    <updated>2020-01-07T07:49:50.025Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　不知从何时开始，我的电脑每天开机连接上网络之后，不断的在下载数据，状态栏显示网速达到每秒1到2兆。开始我还不太在意，不过后来由于带宽全部被这种莫名其奥妙的下载占据了，我连网页都无否正常浏览了，所以我决定解决掉这个问题。下面记录一下解决这个问题的过程。&lt;/p&gt;
-&lt;p&gt;　　
-        
-      
+      &lt;p&gt;　　不知从何时开始，我的电脑每天开机连接上网络之后，不断的在下载数据，状态栏显示网速达到每秒1到2兆。开始我还不太在意，不过后来由于带宽全部被这种莫名其奥妙的下载占据了，我连网页都无否正常浏览了，所以我决定解决掉这个问题。下面记录一下解决这个问题的过程。&lt;/p&gt;
+&lt;p&gt;　　首先我利用一款名为&lt;code&gt;nethogs&lt;/code&gt;的实时网速监控程序查看是哪个进程在占据带宽，发现占据带宽的正是系统的APT包管理工具，我想肯定是系统在执行自动更新。杀掉这个进程后，我便去Google了一下如何关闭APT包管理工具的的自动更新。网上人们提供的解决方案大都一致：修改APT的配置文件。&lt;/p&gt;
     
     </summary>
     
@@ -347,18 +295,12 @@
     <link href="https://mxsyx.site/archives/1/"/>
     <id>https://mxsyx.site/archives/1/</id>
     <published>2019-11-25T07:50:29.000Z</published>
-    <updated>2019-12-09T14:51:22.371Z</updated>
+    <updated>2020-01-07T07:50:15.989Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;　　C++11 引入了对多线程语言级别的支持，&lt;thread&gt; 库是C++的标准线程库，它定义了与编写多线程程序相关的类。 相比于传统的POSIX线程标准，&lt;thread&gt; 库更符合C++的编程风格。&lt;/thread&gt;&lt;/thread&gt;&lt;/p&gt;
-&lt;p&gt;　　&lt;thread&gt;
-        
-      
+      &lt;p&gt;　　C++11 引入了对多线程语言级别的支持，&lt;thread&gt; 库是C++的标准线程库，它定义了与编写多线程程序相关的类。 相比于传统的POSIX线程标准，&lt;thread&gt; 库更符合C++的编程风格。&lt;/p&gt;
+&lt;p&gt;　　&lt;thread&gt; 库是跨平台的，这意味着你可以在任意平台上不经修改直接编译同一段多线程代码（前提是你没有在这段代码中调用其它系统相关的API）&lt;/p&gt;
     
     </summary>
     

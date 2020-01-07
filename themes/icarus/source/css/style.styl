@@ -1,4 +1,4 @@
-family-sans = Ubuntu,Roboto,"Open Sans","Microsoft YaHei",sans-serif;
+family-sans = "open sans", "Helvetica Neue", "Microsoft YaHei",sans-serif;
 family-mono = "Source Code Pro", monospace, "Microsoft YaHei"
 gap = 0px
 screen-tablet = 769px
@@ -103,8 +103,12 @@ img.thumbnail
         display: flex
         align-items: center
         padding: 1.25rem 0.75rem
+        font-weight: 600
+        &:hover
+            background-color:transparent
+            color: #38b7ea
         &.is-active
-            color: hsl(217, 71%, 53%)
+            color: #38b7ea
             background-color: transparent
     @media screen and (max-width: screen-desktop - 1)
         .navbar-menu
@@ -116,6 +120,7 @@ img.thumbnail
             margin-left: 0
 
 .footer
+    padding: 1.5rem
     background: white
     .field
         .button
@@ -176,9 +181,11 @@ img.thumbnail
 
 .article
     .article-meta
+        font-size: 15px !important;
         margin-bottom: 1.5rem !important;
     .content
         font-size: 1.2rem
+        color: #363636
         letter-spacing: 0.08rem;
         blockquote.pullquote
             float: right
@@ -304,7 +311,8 @@ img.thumbnail
 .has-link-black-ter
     transition: 0.2s ease
     &:hover
-        color: hsl(217, 71%, 53%) !important
+        text-decoration: underline
+        
 
 .has-link-grey
     color: hsl(0, 0%, 48%) !important
@@ -398,7 +406,7 @@ figure.highlight
         background: rgba(200, 200, 200, 0.15)
 
     figcaption
-        padding: .3em .75em
+        padding: .2em .75em
         text-align: left
         font-style: normal
         font-size: .8em
@@ -499,6 +507,20 @@ figure.highlight
     border-left: 3px solid #FF1700
     background-color: #F9F9F9
 
-.is-size-4
+.is-size-4.is-block
     font-size: 1.3rem !important;
     font-weight: 600
+    margin-top: 15px;
+
+
+.fa-github
+.fa-envelope
+.fa-rss
+.fa-search
+    font-size: 18px !important;
+
+a.button.is-size-7.is-light
+    background-color: #73c8ff !important
+    color: white
+    &:hover
+       background-color: #058ed2 !important 

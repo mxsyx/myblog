@@ -7,7 +7,7 @@ meta:
 # canonical_url of your site
 canonical_url: 
 # Path or URL to RSS atom.xml
-rss: 
+rss: /atom.xml
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 logo: /assets/images/favicon-32x32.ico
 # Open Graph metadata
@@ -62,7 +62,7 @@ article:
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
         fold: unfolded
     # Whether to show article thumbnail images
-    thumbnail: true
+    thumbnail: false
     # Whether to show estimate article reading time
     readtime: true
 # Search plugin settings
@@ -127,7 +127,7 @@ widgets:
         # Where should the widget be placed, left or right
         position: left
         # Author name to be shown in the profile widget
-        author: 梦醒时夜续
+        author: 梦醒繁华 一城荒芜
         # Title of the author to be shown in the profile widget
         #author_title: Your title
         # Author's current location to be shown in the profile widget
@@ -139,7 +139,7 @@ widgets:
         # Whether to show avatar image rounded or square
         avatar_rounded: true
         # Path or URL for the follow button
-        follow_link: 'https://github.com/ppoffice'
+        follow_link: '/atom.xml'
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
@@ -154,12 +154,9 @@ widgets:
             #Twitter:
                 #icon: fab fa-twitter
                 #url: 'https://twitter.com'
-            #Dribbble:
-                #icon: fab fa-dribbble
-                #url: 'https://dribbble.com'
             RSS:
                 icon: fas fa-rss
-                url: /
+                url: /atom.xml
     -
         # Widget name
         type: toc
