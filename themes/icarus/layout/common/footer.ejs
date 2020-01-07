@@ -9,17 +9,20 @@
                     <img src="<%- url_for(logo) %>" alt="<%= title %>" height="28">
                 <% } %>
                 </a>
-                <p class="is-size-7">
-                &copy; <%= date(new Date(), 'YYYY') %> <%= author || title %>&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
-                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                <% if (busuanzi) { %>
-                <br>
-                <span id="busuanzi_container_site_uv">
-                <%- _p('plugin.visitor', '<span id="busuanzi_value_site_uv">0</span>') %>
-                </span>
-                <% } %>
+                <p class="footer-sign">
+                Copyright © <%= date(new Date(), 'YYYY') %> mxsyx.site All Rights Reserved.&nbsp;
                 </p>
+                <% if (busuanzi) { %>
+                    <p class="footer-sign">
+                        <span id="busuanzi_container_site_pv">
+                            Total visits to this site <span id="busuanzi_value_site_pv" style="color:red"></span> times
+                        </span>
+                         | 
+                        <span id="busuanzi_container_site_uv" style='display:none'>
+                            Total Visitors to this site <span id="busuanzi_value_site_uv" style="color:red"></span> people
+                        </span>
+                    </p>
+                <% } %>
             </div>
             <div class="level-end">
             <% if (Object.keys(links).length) { %>
@@ -38,6 +41,7 @@
                 <% } %>
                 </div>
             <% } %>
+            <a href="http://beian.miit.gov.cn" style="color: #4a4a4a" target="_blank">冀ICP备19021016号-3</a>
             </div>
         </div>
     </div>

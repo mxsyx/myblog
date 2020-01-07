@@ -74,7 +74,13 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment
 comment:
     # Name of the comment plugin
-    type: 
+    type: gitalk
+    owner: zsimline         # (required) GitHub user name
+    repo: mxsyx-public   # (required) GitHub repository name
+    client_id: 7905b097596c6d53b6b4 # (required) OAuth application client id
+    client_secret: f8a01aa6ecb52634d2361efcdbab37f4006e0981 # (required) OAuth application client secret
+    admin: zsimline
+    distraction_free_mode: true
 # Donation entries
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Donation/
 donate:
@@ -221,7 +227,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
         # Baidu Analytics tracking id
-        tracking_id: 
+        tracking_id: 2b0e794178c74717bd4f8d834b5c6e46
     # Hotjar user feedback plugin
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Hotjar
     hotjar:
