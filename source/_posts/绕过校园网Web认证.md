@@ -5,6 +5,7 @@ permalink: 8
 categories: 好玩的事
 tags: 兴趣
 reward: true
+toc: true
 ---
 
 >该文章最初于2017年11月08日发布在[博客园](https://www.cnblogs.com/nkqlhqc/p/7805837.html)
@@ -13,7 +14,7 @@ reward: true
 相信很多高校学生都有用WEB认证方式接入校园网的经历。
 
 　　拿我所在的大学为例，我们大学的校园网由联通公司承建，当我连上寝室的无线路由器后，浏览器会自动弹出一个由卓智公司开发的认证界面，如下图：
-
+<!-- More -->
 <a href="https://blog.zizaixian.top/wp-content/uploads/2019/10/AR589-01.png"><img src="https://blog.zizaixian.top/wp-content/uploads/2019/10/AR589-01.png" alt="" /></a>
 
 　　如果买了联通公司的流量，会取得一个账号和密码，输入账号密码登陆后就能享用无线了，当然啦，对于爱折腾的人来说，总要想点方法绕过这个认证，不为别的，只为实现内心的一个想法。所以我就在各大技术论坛查询了一些绕过web认证的方法。网上有很多人给出了方法，这些方法大同小异，基本原理都一样，但是呢，难免有疏漏和难懂的地方。所以，接下来，我就对这个问题做一次系统的介绍。

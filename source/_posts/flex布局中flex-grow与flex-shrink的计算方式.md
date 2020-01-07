@@ -5,12 +5,13 @@ permalink: 4
 tags: CSS
 categories: [前端, CSS]
 reward: true
+toc: true
 ---
 
 　　CSS 中的 `Flex(弹性布局)` 可以很灵活的控制网页的布局，其中决定 `Flex` 布局内项目宽度/高度的是三个属性：
 `flex-basis`, `flex-grow`, `flex-shrink`. 
 
-
+<!-- More -->
 ### flex-basis
 
 　　flex-basis 决定了项目占据主轴的空间，除非使用 `box-sizing` 进行设置，否则它将设置内容框的大小，因此当你指定一个flex项的大小时需要额外小心，因为它很肯能包含内边距与边框。

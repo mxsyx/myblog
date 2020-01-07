@@ -5,12 +5,13 @@ permalink: 2
 categories: Linux
 tags: Linux
 reward: true
+toc: true
 ---
 
 　　不知从何时开始，我的电脑每天开机连接上网络之后，不断的在下载数据，状态栏显示网速达到每秒1到2兆。开始我还不太在意，不过后来由于带宽全部被这种莫名其奥妙的下载占据了，我连网页都无否正常浏览了，所以我决定解决掉这个问题。下面记录一下解决这个问题的过程。
 
 　　首先我利用一款名为`nethogs`的实时网速监控程序查看是哪个进程在占据带宽，发现占据带宽的正是系统的APT包管理工具，我想肯定是系统在执行自动更新。杀掉这个进程后，我便去Google了一下如何关闭APT包管理工具的的自动更新。网上人们提供的解决方案大都一致：修改APT的配置文件。
-
+<!-- More -->
 APT关于自动更新的配置文件位于"/etc/apt/apt.conf.d/20auto-upgrades", 将其中的
 ```shell
 APT::Periodic::Update-Package-Lists "1";
