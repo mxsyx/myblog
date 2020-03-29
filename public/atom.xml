@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://mxsyx.site/"/>
-  <updated>2020-03-08T06:22:03.308Z</updated>
+  <updated>2020-03-29T14:54:20.111Z</updated>
   <id>https://mxsyx.site/</id>
   
   <author>
@@ -17,66 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>我只想要个苹果</title>
-    <link href="https://mxsyx.site/archives/17/"/>
-    <id>https://mxsyx.site/archives/17/</id>
-    <published>2020-03-07T13:01:10.000Z</published>
-    <updated>2020-03-08T06:22:03.308Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　颜润出生于上个世纪的八十年代，父母都是勤勤恳恳的庄户人，家里不算富裕，也决不能说贫穷。我只记得他二十四岁之前的模样，在那一年，他大学毕业，离开了这所城市，去了江南的某个地方，之后便再也没有回来过。上一次通电话时，他问我家乡的夜晚是否还能看到星星，我说天气好的话可以看到，听完我的回答后，他深深的叹了一口气，用沙哑的声音说道：”你真幸运，很多年之前我就看不到星星了“。我反问道为何这样说，他说：”我抬头向上望时看到的不是天，而是地，怎么能指望在地上寻找星星呢？于是我尝试着低头找星星，可颈椎不好，低不下头，自然也就再也没有看见到过星星，等颈椎治好了，我就能低头找星星了。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="那年夏夜" scheme="https://mxsyx.site/categories/%E9%82%A3%E5%B9%B4%E5%A4%8F%E5%A4%9C/"/>
-    
-    
-      <category term="随笔" scheme="https://mxsyx.site/tags/%E9%9A%8F%E7%AC%94/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>武汉疫情背后思考-社会舆论</title>
-    <link href="https://mxsyx.site/archives/16/"/>
-    <id>https://mxsyx.site/archives/16/</id>
-    <published>2020-02-09T13:48:48.000Z</published>
-    <updated>2020-02-16T14:44:31.973Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　自二月初到今天，短短十天的时间，围绕着武汉疫情又发生了太多太多的事情。有些事情是能说的，有些事情是不能说的。对于绝大多数人来讲，无法亲身投入到救治工作中去，毕竟不是每个人都是医生。人们早已习惯于借助互联网来了解信息，就此次疫情来说，互联网对于社会的的影响可谓有其积极的一面，亦有其消极的一面。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>武汉疫情背后的思考-罪魁祸首</title>
-    <link href="https://mxsyx.site/archives/14/"/>
-    <id>https://mxsyx.site/archives/14/</id>
-    <published>2020-01-31T12:43:17.000Z</published>
-    <updated>2020-02-09T13:48:04.783Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　自2019年12月份以来，爆发自湖北武汉的新型冠状病毒疫情，已经给我国人民的生命财产造成了重大的损失，截止2020年2月1日晚八点，全国确诊病例已达到11890例，死亡病例259例，致死率约为2.18%. 任何疫情的发生对人民来讲都不是好事，但是此次疫情不同于地震、洪水、台风等自然灾害，它完全是由某些人一手造成的。&lt;/p&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>JS数组</title>
-    <link href="https://mxsyx.site/archives/13/"/>
-    <id>https://mxsyx.site/archives/13/</id>
+    <link href="https://mxsyx.site/archives/2/"/>
+    <id>https://mxsyx.site/archives/2/</id>
     <published>2019-12-30T02:43:51.000Z</published>
-    <updated>2020-01-07T07:24:48.873Z</updated>
+    <updated>2020-03-29T14:54:20.111Z</updated>
     
     <summary type="html">
     
@@ -85,38 +30,21 @@
     </summary>
     
     
-      <category term="前端" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端技术" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="JavaScript" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/JavaScript/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个毕业生眼中的大学</title>
-    <link href="https://mxsyx.site/archives/12/"/>
-    <id>https://mxsyx.site/archives/12/</id>
-    <published>2019-12-26T14:15:39.000Z</published>
-    <updated>2020-02-09T13:47:57.755Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　严格意义上讲，我不能算是一个毕业生，因为距离我真正拿到毕业证还有半年的时间，当然最主要的原因是我感觉自己好像从来没有上过大学，就像某些段子里讲的那样我可能上了一个假的大学。&lt;/p&gt;
-&lt;p&gt;　　三年前，我来到了目前就读的大学，虽然这是一所普通到不能再普通的大学，但是不知为何我并没有因此感到一丝沮丧。周围的人，特别是我的父母都说我上了一所野鸡大学，我不想反驳，因为的确没有反驳的理由。家里的人通常会说你上的大学“不好”，人家的孩子上的大学是“好大学“，但是你若问他们”好的大学“与”不好的大学“之间的区别在哪里，他们却又答不上来，毕竟对你指指点点的那帮人从来也没上过大学。&lt;/p&gt;
-&lt;p&gt;　　我花了两天时间将这几年大学生活的感悟写了出来，算是一篇&lt;strong&gt;长篇日记&lt;/strong&gt;，同时分享给感兴趣的的人。此文较长，一万字左右，阅读需要花费半个小时。&lt;/p&gt;
-    
-    </summary>
+      <category term="JavaScript" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/JavaScript/"/>
     
     
+      <category term="web" scheme="https://mxsyx.site/tags/web/"/>
     
   </entry>
   
   <entry>
     <title>高度自适应的输入框</title>
-    <link href="https://mxsyx.site/archives/10/"/>
-    <id>https://mxsyx.site/archives/10/</id>
+    <link href="https://mxsyx.site/archives/5/"/>
+    <id>https://mxsyx.site/archives/5/</id>
     <published>2019-12-10T14:15:19.000Z</published>
-    <updated>2020-01-07T15:41:59.409Z</updated>
+    <updated>2020-03-29T14:42:38.987Z</updated>
     
     <summary type="html">
     
@@ -125,8 +53,12 @@
     </summary>
     
     
-      <category term="VueJS" scheme="https://mxsyx.site/categories/VueJS/"/>
+      <category term="前端技术" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     
+      <category term="VueJS" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/VueJS/"/>
+    
+    
+      <category term="web" scheme="https://mxsyx.site/tags/web/"/>
     
   </entry>
   
@@ -135,7 +67,7 @@
     <link href="https://mxsyx.site/archives/9/"/>
     <id>https://mxsyx.site/archives/9/</id>
     <published>2019-12-10T13:40:03.000Z</published>
-    <updated>2020-01-07T07:47:13.161Z</updated>
+    <updated>2020-03-29T14:40:20.871Z</updated>
     
     <summary type="html">
     
@@ -144,17 +76,19 @@
     </summary>
     
     
-      <category term="其它" scheme="https://mxsyx.site/categories/%E5%85%B6%E5%AE%83/"/>
+      <category term="数据分析" scheme="https://mxsyx.site/categories/%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/"/>
     
+    
+      <category term="大数据" scheme="https://mxsyx.site/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
     
   </entry>
   
   <entry>
     <title>绕过校园网Web认证</title>
-    <link href="https://mxsyx.site/archives/8/"/>
-    <id>https://mxsyx.site/archives/8/</id>
+    <link href="https://mxsyx.site/archives/4/"/>
+    <id>https://mxsyx.site/archives/4/</id>
     <published>2019-12-10T13:34:58.000Z</published>
-    <updated>2020-01-07T07:47:45.953Z</updated>
+    <updated>2020-03-29T14:36:46.631Z</updated>
     
     <summary type="html">
     
@@ -175,33 +109,11 @@
   </entry>
   
   <entry>
-    <title>那年夏夜</title>
-    <link href="https://mxsyx.site/archives/6/"/>
-    <id>https://mxsyx.site/archives/6/</id>
-    <published>2019-12-10T13:27:49.000Z</published>
-    <updated>2020-01-07T07:48:16.189Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;　　我想写些东西已经很久了，以前不会写，不知该从何处下笔。不知道现在会不会写，但凡事都可以去试一试，于是我写下了这篇文章。&lt;/p&gt;
-&lt;p&gt;　　十多年前，在我上小学的时候，那时的我还有一双明亮的眼睛，能清楚的看见天上数不清的星星。现在呢，患了近视的我再也无法看清那些星星了，也许真的是身体上的原因，又或许是有什么不干净的东西模糊了我的眼睛。&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="那年夏夜" scheme="https://mxsyx.site/categories/%E9%82%A3%E5%B9%B4%E5%A4%8F%E5%A4%9C/"/>
-    
-    
-      <category term="生活" scheme="https://mxsyx.site/tags/%E7%94%9F%E6%B4%BB/"/>
-    
-  </entry>
-  
-  <entry>
     <title>名言摘抄</title>
-    <link href="https://mxsyx.site/archives/7/"/>
-    <id>https://mxsyx.site/archives/7/</id>
+    <link href="https://mxsyx.site/archives/3/"/>
+    <id>https://mxsyx.site/archives/3/</id>
     <published>2019-12-10T13:25:38.000Z</published>
-    <updated>2019-12-10T13:33:49.532Z</updated>
+    <updated>2020-03-29T14:57:40.543Z</updated>
     
     <summary type="html">
     
@@ -216,7 +128,7 @@
     </summary>
     
     
-      <category term="一个人" scheme="https://mxsyx.site/categories/%E4%B8%80%E4%B8%AA%E4%BA%BA/"/>
+      <category term="转载" scheme="https://mxsyx.site/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="思考" scheme="https://mxsyx.site/tags/%E6%80%9D%E8%80%83/"/>
@@ -225,10 +137,10 @@
   
   <entry>
     <title>bdtrans-一个命令行下的翻译工具</title>
-    <link href="https://mxsyx.site/archives/5/"/>
-    <id>https://mxsyx.site/archives/5/</id>
+    <link href="https://mxsyx.site/archives/6/"/>
+    <id>https://mxsyx.site/archives/6/</id>
     <published>2019-12-09T14:55:45.000Z</published>
-    <updated>2020-01-07T07:48:42.753Z</updated>
+    <updated>2020-03-29T14:55:51.567Z</updated>
     
     <summary type="html">
     
@@ -241,16 +153,16 @@
       <category term="工具使用" scheme="https://mxsyx.site/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
     
     
-      <category term="工具使用" scheme="https://mxsyx.site/tags/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/"/>
+      <category term="工具" scheme="https://mxsyx.site/tags/%E5%B7%A5%E5%85%B7/"/>
     
   </entry>
   
   <entry>
     <title>flex布局中flex-grow与flex-shrink的计算方式</title>
-    <link href="https://mxsyx.site/archives/4/"/>
-    <id>https://mxsyx.site/archives/4/</id>
+    <link href="https://mxsyx.site/archives/8/"/>
+    <id>https://mxsyx.site/archives/8/</id>
     <published>2019-12-08T13:57:10.000Z</published>
-    <updated>2020-01-07T07:49:09.409Z</updated>
+    <updated>2020-03-29T14:43:46.087Z</updated>
     
     <summary type="html">
     
@@ -259,21 +171,21 @@
     </summary>
     
     
-      <category term="前端" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/"/>
+      <category term="前端技术" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="CSS" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF/CSS/"/>
+      <category term="CSS" scheme="https://mxsyx.site/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/CSS/"/>
     
     
-      <category term="CSS" scheme="https://mxsyx.site/tags/CSS/"/>
+      <category term="web" scheme="https://mxsyx.site/tags/web/"/>
     
   </entry>
   
   <entry>
-    <title>看懂了《让子弹飞》就理解了毛泽东和文革(转载)</title>
-    <link href="https://mxsyx.site/archives/3/"/>
-    <id>https://mxsyx.site/archives/3/</id>
+    <title>看懂了《让子弹飞》就理解了毛泽东和文革</title>
+    <link href="https://mxsyx.site/archives/1/"/>
+    <id>https://mxsyx.site/archives/1/</id>
     <published>2019-12-05T15:08:41.000Z</published>
-    <updated>2020-01-07T07:49:29.769Z</updated>
+    <updated>2020-03-29T14:57:35.159Z</updated>
     
     <summary type="html">
     
@@ -282,7 +194,7 @@
     </summary>
     
     
-      <category term="一个人" scheme="https://mxsyx.site/categories/%E4%B8%80%E4%B8%AA%E4%BA%BA/"/>
+      <category term="转载" scheme="https://mxsyx.site/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="思考" scheme="https://mxsyx.site/tags/%E6%80%9D%E8%80%83/"/>
@@ -291,10 +203,10 @@
   
   <entry>
     <title>解决Debina系统自动更新软件包的问题</title>
-    <link href="https://mxsyx.site/archives/2/"/>
-    <id>https://mxsyx.site/archives/2/</id>
+    <link href="https://mxsyx.site/archives/10/"/>
+    <id>https://mxsyx.site/archives/10/</id>
     <published>2019-12-02T15:09:23.000Z</published>
-    <updated>2020-01-07T07:49:50.025Z</updated>
+    <updated>2020-03-29T14:28:32.463Z</updated>
     
     <summary type="html">
     
@@ -307,16 +219,16 @@
       <category term="Linux" scheme="https://mxsyx.site/categories/Linux/"/>
     
     
-      <category term="Linux" scheme="https://mxsyx.site/tags/Linux/"/>
+      <category term="计算机基础" scheme="https://mxsyx.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
   <entry>
     <title>C++ 标准线程库</title>
-    <link href="https://mxsyx.site/archives/1/"/>
-    <id>https://mxsyx.site/archives/1/</id>
+    <link href="https://mxsyx.site/archives/7/"/>
+    <id>https://mxsyx.site/archives/7/</id>
     <published>2019-11-25T07:50:29.000Z</published>
-    <updated>2020-01-07T07:50:15.989Z</updated>
+    <updated>2020-03-29T14:41:33.239Z</updated>
     
     <summary type="html">
     
@@ -329,7 +241,7 @@
       <category term="编程语言" scheme="https://mxsyx.site/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
     
-      <category term="C++" scheme="https://mxsyx.site/tags/C/"/>
+      <category term="计算机基础" scheme="https://mxsyx.site/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
