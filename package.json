@@ -1,5 +1,5 @@
 {
-  "name": "hexo-site",
+  "name": "myblog",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -9,23 +9,24 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "4.1.1"
+    "version": "4.2.1"
   },
   "dependencies": {
     "hexo": "^4.1.1",
-    "hexo-deployer-rsync": "^1.0.0",
-    "hexo-filter-highlight": "^1.0.0",
+    "hexo-server": "^1.0.0",
+    "hexo-generator-index": "^1.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
-    "hexo-generator-feed": "^2.1.1",
-    "hexo-generator-index": "^1.0.0",
-    "hexo-generator-search": "^2.4.0",
     "hexo-generator-tag": "^1.0.0",
+    "hexo-generator-search": "^2.4.0",
+    "hexo-generator-feed": "^2.1.1",
     "hexo-render-pug": "^2.1.4",
     "hexo-renderer-ejs": "^1.0.0",
     "hexo-renderer-marked": "^2.0.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0",
-    "hexo-wordcount": "^6.0.1"
+    "hexo-filter-highlight": "^1.0.0",
+    "hexo-deployer-rsync": "^1.0.0",
+    "hexo-wordcount": "^6.0.1",
+    "cheerio": "^1.0.0-rc.3"
   }
 }
